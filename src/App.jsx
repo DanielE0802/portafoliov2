@@ -1,50 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import LenguagueSelector from "./components/LanguagueSelector";
+import About from "./components/about";
+import Sidebar from "./components/sidebar";
+import CustomCursor from "./components/CustomCursor";
+import CustomCursorManager from "./components/CustomCursorManager";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  function updateMousePosition(e){
-    if (e.touches && e.touches.length > 1) return
-
-    var x = e.clientX 
-    var y = e.clientY 
-
-    document.documentElement.style.setProperty('--cursorX', x + 'px')
-    document.documentElement.style.setProperty('--cursorY', y + 'px')
-
-  }
-
-  document.addEventListener('mousemove', updateMousePosition)
-  document.addEventListener('touchmove', updateMousePosition)
-
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <CustomCursorManager>
+          <CustomCursor />
+
+          <div
+            className="mx-auto min-h-screen max-w-screen-xl px-6 py-10 font-sans md:px-12 md:py-8 lg:px-24 lg:py-0"
+          >
+            <LenguagueSelector />
+            <div className="lg:flex lg:justify-between lg:gap-4">
+              <Sidebar />
+              <div className="pt-24 lg:w-1/2 lg:py-24">
+                <About />
+              </div>
+            </div>
+          </div>
+      </CustomCursorManager>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

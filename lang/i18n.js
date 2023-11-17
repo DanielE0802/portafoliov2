@@ -27,6 +27,8 @@ i18n
             'Education': 'Educación',
             'Projects': 'Proyectos',
             'Contact': 'Contacto',
+            "Personal Projects": "Proyectos Personales",
+            "Work Projects": "Proyectos Laborales",
           }
         }
       },

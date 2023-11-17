@@ -33,5 +33,18 @@
             "Custom-Hooks",
             "React-Context"
         ]
+    },{
+        "id": 3,
+        "name": "GIFOS",
+        "description": "Aplicación web que funciona como un catálogo de GIFs, Diseñada en HTML, CSS, y JavaScript Vanilla por medio de la metodología SPA para lograr una mayor fluidez de la página, además de ser Mobile first y adaptado a todas las pantallas. Logrando funciones de búsqueda, interacción con una API externa utilizando asincróncronismo y aprovechando las herramientas nativas del navegador, como capturar imágenes a través de una cámara web.",
+        "image": "/Gifos.png",
+        "url": "https://daniele0802.github.io/Proyecto-GIFOS/",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "API",
+            "Mobile-First"
+        ]
     }
 ]

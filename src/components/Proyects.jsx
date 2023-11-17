@@ -1,15 +1,17 @@
 
-import proyectsData from "../data/proyects.json";
-function Proyects() {
+import { useTranslation } from "react-i18next";
+import PropTypes from "prop-types";
+function Proyects({proyectsData, link}) {
+  const { t } = useTranslation();
   return (
     <section
-      id="projects"
+      id={link}
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
       aria-label="Selected projects"
     >
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-        <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">
-          Projects
+        <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only text-left">
+          {t("Personal Projects")}
         </h2>
       </div>
       <div>
@@ -54,28 +56,6 @@ function Proyects() {
                                 proyect.description
                             }
                         </p>
-                        <a
-                          className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                          href="https://github.com/bchiang7/spotify-profile"
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label="575 stars on GitHub"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="mr-1 h-3 w-3"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                          <span>575</span>
-                        </a>
                         <ul
                           className="mt-2 flex flex-wrap"
                           aria-label="Technologies used:"
@@ -139,5 +119,18 @@ function Proyects() {
     </section>
   );
 }
+
+Proyects.propTypes = {
+  proyectsData: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      description: PropTypes.string,
+      url: PropTypes.string,
+      image: PropTypes.string,
+      skills: PropTypes.arrayOf(PropTypes.string),
+    })
+  ),
+  link: PropTypes.string,
+};
 
 export default Proyects;

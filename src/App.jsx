@@ -6,6 +6,7 @@ import CustomCursor from "./components/CustomCursor";
 import CustomCursorManager from "./components/CustomCursorManager";
 import Experience from "./components/Experience";
 import Proyects from "./components/Proyects";
+import proyectsData from "./data/proyects.json";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <div className="pt-24 lg:w-2/3 lg:py-24">
               <About />
               <Experience />
-              <Proyects />
+              <Proyects proyectsData={proyectsData} link="personal-projects"/>
             </div>
           </div>
         </div>

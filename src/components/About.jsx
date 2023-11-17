@@ -25,11 +25,7 @@ function About() {
       </div>
       <div>
         <p className="mb-4">
-          ¡Hola! 👋 Soy Daniel. Tengo 21 años y soy de Colombia, mi interés por
-          el Desarrollo de Software nació en 2017 cuando me llamó la atención
-          como desarrollaban los juegos, comencé haciendo cosas muy básicas en
-          Unity junto a un amigo, en 2020 decidí hacer parte de Protalento, en
-          la que aprendí atraves de Acamica
+          {t("¡Hola! 👋 Soy Daniel. Tengo 21 años y soy de Colombia, mi interés por el Desarrollo de Software nació en 2017 cuando me llamó la atención como desarrollaban los juegos, comencé haciendo cosas muy básicas en Unity junto a un amigo, en 2020 decidí hacer parte de Protalento, en la que atraves de Acamica aprendí")}
           <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://www.linkedin.com/in/daniel-estupi%C3%B1%C3%A1n/overlay/1635471079928/single-media-viewer/?profileId=ACoAADQPELYBG7-Xdqra7yAcasY77pk1I6lR1tQ"
@@ -37,11 +33,10 @@ function About() {
             rel="noreferrer"
           >
             {" "}
-            Desarrollo Web Full Stack (HTML, CSS, JavaScript y Bases de datos).
+            {t("Desarrollo Web Full Stack (HTML, CSS, JavaScript y Bases de datos).")}
           </a>
           <br></br>
-          Actualmente soy estudiante en Ingeniería de Sistemas en la Universidad
-          Tecnológica de Pereira. Comencé mi primer trabajo en{" "}
+          {t("Actualmente soy estudiante en Ingeniería de Sistemas en la Universidad Tecnológica de Pereira. Comencé mi primer trabajo en")}{" "}
           <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://www.aventi.co/"
@@ -50,8 +45,7 @@ function About() {
           >
             Aventi Solutions{" "}
           </a>
-          liderando diferentes proyectos en Magento (Rimax, Saluti, Empack),
-          para posteriormente trabajar en{" "}
+          {t("liderando diferentes proyectos en Magento (Rimax, Saluti, Empack), para posteriormente trabajar en")}{" "}
           <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://tech.talentum.edu.co/#products"
@@ -60,7 +54,7 @@ function About() {
           >
             Corporación Talentum{" "}
           </a>
-          desarrollando un dashboard de un proyecto llamado{" "}
+          {t("desarrollando un dashboard de un proyecto llamado")}{" "}
           <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://universum.talentum.edu.co/"
@@ -69,7 +63,7 @@ function About() {
           >
             Universum{" "}
           </a>
-          . Actualmente trabajo en{" "}
+          . {t("Actualmente trabajo en")}{" "}
           <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://stefanini.com/es"
@@ -78,9 +72,7 @@ function About() {
           >
             Stefanini LATAM
           </a>
-          , en el cargo de Senior Magento Frontend Developer. Soy una persona
-          que está en constante aprendizaje, Estas son algunas tecnologías con
-          las que he estado trabajando recientemente:
+          , {t("en el cargo de Senior Magento Frontend Developer. Soy una persona que está en constante aprendizaje, Estas son algunas tecnologías con las que he estado trabajando recientemente:")}
         </p>
         <section className="">
           <div className="py-2 lg:py-2 mx-auto max-w-screen-xl px-0">

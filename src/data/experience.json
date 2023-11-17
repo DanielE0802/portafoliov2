@@ -17,7 +17,8 @@
             "Jira",
             "Git",
             "Bitbucket",
-            "Scrum", "Linux"
+            "Scrum",
+            "Linux"
         ]
     },
     {
@@ -27,7 +28,7 @@
         "dateInit": "Enero 2023",
         "dateEnd": "Presente",
         "link": "https://talentum.edu.co/",
-        "description": "Desarrollo del dashboard para el proyecto Universum, el cual permite a los docentes y administrativos de las instituciones educativas gestionar y analisar la información suminitrada por el juego, permitiendo la generación de reportes y estadísticas de las actividades. Permitiendo filtrar por institución, grado, grupo, estudiante, entre otros. Actualmente continuo trabajando en otros proyectos de la empresa.", 
+        "description": "Desarrollo del dashboard para el proyecto Universum, el cual permite a los docentes y administrativos de las instituciones educativas gestionar y analisar la información suminitrada por el juego, permitiendo la generación de reportes y estadísticas de las actividades. Permitiendo filtrar por institución, grado, grupo, estudiante, entre otros. Actualmente continuo trabajando en otros proyectos de la empresa.",
         "tags": [
             "React",
             "Redux",
@@ -37,17 +38,18 @@
             "NextJS",
             "CSS",
             "JavaScript",
-            "Git"
+            "Git",
+            "Docker"
         ]
-    },{
+    },
+    {
         "id": 3,
         "company": "Aventi Solutions",
         "job": "Front-End Magento Developer",
         "dateInit": "Enero 2021",
         "dateEnd": "Agosto 2023",
         "link": "https://www.aventi.co/",
-        "description": "Implementación de nuevas funcionalidades, vistas e interaciónes en la plataforma de e-commerce de Movistar Peru, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros.",
-        "tags": [
+        "description": "Front-end developer working with technologies such as JavaScript, HTML, PHTML, CSS, LESS, plus tools like  Git, GitFlow, using CMS such as Magento 2  and WordPress. Working in projects ecommerce like Evacol, Rimax, Saluti, Toscana, Empack, Casa Andina.","tags": [
             "Magento 2",
             "PHTML",
             "LESS",
@@ -56,10 +58,10 @@
             "Bootstrap",
             "Jira",
             "Git",
-            "Bitbucket",
-            "Scrum", "Linux"
+            "GitLab",
+            "GitFlow",
+            "Scrum",
+            "Linux"
         ]
-        
-        
     }
 ]

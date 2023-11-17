@@ -5,7 +5,7 @@ import Sidebar from "./components/Sidebar";
 import CustomCursor from "./components/CustomCursor";
 import CustomCursorManager from "./components/CustomCursorManager";
 import Experience from "./components/Experience";
-import Proyects from "./components/proyects";
+import Proyects from "./components/Proyects";
 
 function App() {
   return (

@@ -102,7 +102,7 @@ function Sidebar() {
             rel="noreferrer"
           >
             <span className="sr-only">LinkedIn</span>
-            <img className="h-8 w-8 filter invert opacity-60" src="/public/file.png" alt="Descargar CV" />{" "}
+            <img className="h-8 w-8 filter invert opacity-60" src="/file.png" alt="Descargar CV" />{" "}
           </a>
         </li>
       </ul>

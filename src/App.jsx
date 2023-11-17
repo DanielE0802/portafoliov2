@@ -1,7 +1,7 @@
 import "./App.css";
 import LenguagueSelector from "./components/LanguagueSelector";
-import About from "./components/about";
-import Sidebar from "./components/sidebar";
+import About from "./components/About";
+import Sidebar from "./components/Sidebar";
 import CustomCursor from "./components/CustomCursor";
 import CustomCursorManager from "./components/CustomCursorManager";
 import Experience from "./components/Experience";

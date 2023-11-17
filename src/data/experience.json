@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "company": "Stefanini Latam",
+        "job": "Senior Front-end Magento Developer",
+        "dateInit": "Agosto 2023",
+        "dateEnd": "Presente",
+        "link": "https://www.stefanini.com/es/",
+        "description": "Implementación de nuevas funcionalidades, vistas e interaciónes en la plataforma de e-commerce de Movistar Peru, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros.",
+        "tags": [
+            "Magento 2",
+            "PHTML",
+            "LESS",
+            "JavaScript",
+            "Knockout.js",
+            "Bootstrap",
+            "Jira",
+            "Git",
+            "Bitbucket",
+            "Scrum", "Linux"
+        ]
+    },
+    {
+        "id": 2,
+        "company": "Corporación Talentum",
+        "job": "Full-stack Developer",
+        "dateInit": "Enero 2023",
+        "dateEnd": "Presente",
+        "link": "https://talentum.edu.co/",
+        "description": "Desarrollo del dashboard para el proyecto Universum, el cual permite a los docentes y administrativos de las instituciones educativas gestionar y analisar la información suminitrada por el juego, permitiendo la generación de reportes y estadísticas de las actividades. Permitiendo filtrar por institución, grado, grupo, estudiante, entre otros. Actualmente continuo trabajando en otros proyectos de la empresa.", 
+        "tags": [
+            "React",
+            "Redux",
+            "React Router",
+            "React Hooks",
+            "NestJS",
+            "NextJS",
+            "CSS",
+            "JavaScript",
+            "Git"
+        ]
+    },{
+        "id": 3,
+        "company": "Aventi Solutions",
+        "job": "Front-End Magento Developer",
+        "dateInit": "Enero 2021",
+        "dateEnd": "Agosto 2023",
+        "link": "https://www.aventi.co/",
+        "description": "Implementación de nuevas funcionalidades, vistas e interaciónes en la plataforma de e-commerce de Movistar Peru, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros.",
+        "tags": [
+            "Magento 2",
+            "PHTML",
+            "LESS",
+            "JavaScript",
+            "Knockout.js",
+            "Bootstrap",
+            "Jira",
+            "Git",
+            "Bitbucket",
+            "Scrum", "Linux"
+        ]
+        
+        
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Ally360",
+        "description": "Sistema ERP que permite la contabilidad, sistema POS. Herramienta para que el empresario tenga acceso a un software que le permita planificar, analizar y gestionar toda su empresa. Además de contar con una interfaz de usuario amigable y rápida. ",
+        "image": "https://ally360.netlify.app/logo/logoFondoTransparentesvg.svg",
+        "url": "https://ally360.netlify.app/ ",
+        "skills": [
+            "React-Hook-Form",
+            "Redux",
+            "React.js",
+            "MySQL",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Material-UI",
+            "JWT",
+            "Yup"
+        ] 
+
+    },{
+        "id": 2,
+        "name": "ToDo App",
+        "description": "Aplicación TODO que permite crear, editar, visualizar y cambiar de estado las tareas. construida en React, usando Custom-hooks para la persistencia de datos atraves del localstorage, React Context para el manejo del estado global y Chakra IU para la interfaz de usuario",
+        "image": "/Task-App.png",
+        "url": "https://github.com/DanielE0802/Todo-React",
+        "skills": [
+            "React.js",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Chakra-UI",
+            "Custom-Hooks",
+            "React-Context"
+        ]
+    }
+]

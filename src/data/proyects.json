@@ -1,50 +1,177 @@
-[
-    {
-        "id": 1,
-        "name": "Ally360",
-        "description": "Sistema ERP que permite la contabilidad, sistema POS. Herramienta para que el empresario tenga acceso a un software que le permita planificar, analizar y gestionar toda su empresa. Además de contar con una interfaz de usuario amigable y rápida. ",
-        "image": "https://ally360.netlify.app/logo/logoFondoTransparentesvg.svg",
-        "url": "https://ally360.netlify.app/ ",
-        "skills": [
-            "React-Hook-Form",
-            "Redux",
-            "React.js",
-            "MySQL",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Material-UI",
-            "JWT",
-            "Yup"
-        ] 
-
-    },{
-        "id": 2,
-        "name": "ToDo App",
-        "description": "Aplicación TODO que permite crear, editar, visualizar y cambiar de estado las tareas. construida en React, usando Custom-hooks para la persistencia de datos atraves del localstorage, React Context para el manejo del estado global y Chakra IU para la interfaz de usuario",
-        "image": "/Task-App.png",
-        "url": "https://github.com/DanielE0802/Todo-React",
-        "skills": [
-            "React.js",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Chakra-UI",
-            "Custom-Hooks",
-            "React-Context"
-        ]
-    },{
-        "id": 3,
-        "name": "GIFOS",
-        "description": "Aplicación web que funciona como un catálogo de GIFs, Diseñada en HTML, CSS, y JavaScript Vanilla por medio de la metodología SPA para lograr una mayor fluidez de la página, además de ser Mobile first y adaptado a todas las pantallas. Logrando funciones de búsqueda, interacción con una API externa utilizando asincróncronismo y aprovechando las herramientas nativas del navegador, como capturar imágenes a través de una cámara web.",
-        "image": "/Gifos.png",
-        "url": "https://daniele0802.github.io/Proyecto-GIFOS/",
-        "skills": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "API",
-            "Mobile-First"
-        ]
-    }
-]
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "Ally360",
+            "description": "Sistema ERP que permite la contabilidad, sistema POS. Herramienta para que el empresario tenga acceso a un software que le permita planificar, analizar y gestionar toda su empresa. Además de contar con una interfaz de usuario amigable y rápida. ",
+            "image": "https://ally360.netlify.app/logo/logoFondoTransparentesvg.svg",
+            "url": "https://ally360.netlify.app/ ",
+            "skills": [
+                "React-Hook-Form",
+                "Redux",
+                "React.js",
+                "MySQL",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Material-UI",
+                "JWT",
+                "Yup"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "ToDo App",
+            "description": "Aplicación TODO que permite crear, editar, visualizar y cambiar de estado las tareas. construida en React, usando Custom-hooks para la persistencia de datos atraves del localstorage, React Context para el manejo del estado global y Chakra IU para la interfaz de usuario",
+            "image": "/Task-App.png",
+            "url": "https://github.com/DanielE0802/Todo-React",
+            "skills": [
+                "React.js",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Chakra-UI",
+                "Custom-Hooks",
+                "React-Context"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "GIFOS",
+            "description": "Aplicación web que funciona como un catálogo de GIFs, Diseñada en HTML, CSS, y JavaScript Vanilla por medio de la metodología SPA para lograr una mayor fluidez de la página, además de ser Mobile first y adaptado a todas las pantallas. Logrando funciones de búsqueda, interacción con una API externa utilizando asincróncronismo y aprovechando las herramientas nativas del navegador, como capturar imágenes a través de una cámara web.",
+            "image": "/Gifos.png",
+            "url": "https://daniele0802.github.io/Proyecto-GIFOS/",
+            "skills": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "API",
+                "Mobile-First"
+            ]
+        }
+    ],
+    "detailedProjectInfo": [
+        {
+            "title": "Ally360",
+            "description": "Sistema ERP que permite la contabilidad, sistema POS.",
+            "detailedDescription": {
+                "es": "Ally360 es un sistema ERP integral diseñado para ayudar a los empresarios a gestionar y planificar sus negocios de manera eficiente. Ofrece funcionalidades avanzadas de contabilidad y un sistema de punto de venta (POS), todo con una interfaz amigable y rápida.",
+                "en": "Ally360 is a comprehensive ERP system designed to help entrepreneurs efficiently manage and plan their businesses. It offers advanced accounting functionalities and a point of sale (POS) system, all with a user-friendly and fast interface."
+            },
+            "challenges": {
+                "es": [
+                    "Integración de múltiples módulos en un solo sistema.",
+                    "Optimización del rendimiento para manejar grandes volúmenes de datos.",
+                    "Implementación de medidas de seguridad robustas para proteger la información empresarial."
+                ],
+                "en": [
+                    "Integration of multiple modules into a single system.",
+                    "Performance optimization to handle large data volumes.",
+                    "Implementation of robust security measures to protect business information."
+                ]
+            },
+            "learnings": {
+                "es": [
+                    "Desarrollo de aplicaciones empresariales complejas.",
+                    "Mejora en la gestión del estado global con Redux.",
+                    "Uso avanzado de React Hook Form para formularios."
+                ],
+                "en": [
+                    "Development of complex enterprise applications.",
+                    "Improved global state management with Redux.",
+                    "Advanced use of React Hook Form for forms."
+                ]
+            },
+            "image": "/Ally360.png",
+            "tags": [
+                "React.js",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Chakra-UI",
+                "Custom-Hooks",
+                "React-Context"
+            ],
+            "link": "/ally360",
+            "link-github": "https://github.com/DanielE0802/pos-app-api"
+        },
+        {
+            "title": "Gifos",
+            "description": "Buscador de Gifs",
+            "detailedDescription": {
+                "es": "Gifos es una aplicación web interactiva que permite a los usuarios buscar y visualizar GIFs animados utilizando la API de Giphy. El proyecto se centra en ofrecer una experiencia de usuario fluida y atractiva, con un diseño limpio y funcionalidades de búsqueda en tiempo real.",
+                "en": "Gifos is an interactive web application that allows users to search and view animated GIFs using the Giphy API. The project focuses on providing a smooth and engaging user experience, with a clean design and real-time search functionalities."
+            },
+            "challenges": {
+                "es": [
+                    "Implementar un scroll infinito para cargar más resultados de forma eficiente.",
+                    "Gestionar el estado de la aplicación de forma centralizada.",
+                    "Asegurar un diseño responsive y adaptable a diferentes dispositivos."
+                ],
+                "en": [
+                    "Implementing infinite scroll to efficiently load more results.",
+                    "Managing the application state centrally.",
+                    "Ensuring a responsive and adaptable design for different devices."
+                ]
+            },
+            "learnings": {
+                "es": [
+                    "Uso avanzado de APIs REST.",
+                    "Técnicas de optimización del rendimiento para la carga de imágenes.",
+                    "Mejora en la gestión del estado en aplicaciones React."
+                ],
+                "en": [
+                    "Advanced use of REST APIs.",
+                    "Performance optimization techniques for image loading.",
+                    "Improved state management in React applications."
+                ]
+            },
+            "image": "/Gifos.png",
+            "tags": [
+                "React",
+                "API",
+                "CSS"
+            ],
+            "link": "https://gifos-dr.netlify.app/"
+        },
+        {
+            "title": "Task App",
+            "description": "Aplicación de Tareas",
+            "detailedDescription": {
+                "es": "Task App es una herramienta de gestión de tareas que permite a los usuarios crear, organizar y dar seguimiento a sus pendientes. La aplicación cuenta con funcionalidades para editar, eliminar y marcar tareas como completadas, todo ello con una interfaz intuitiva y minimalista.",
+                "en": "Task App is a task management tool that allows users to create, organize, and track their to-dos. The application features functionalities to edit, delete, and mark tasks as completed, all with an intuitive and minimalist interface."
+            },
+            "challenges": {
+                "es": [
+                    "Persistencia de datos utilizando el almacenamiento local del navegador (Local Storage).",
+                    "Creación de una interfaz de usuario interactiva para la manipulación de tareas.",
+                    "Implementación de la lógica para filtrar y mostrar tareas."
+                ],
+                "en": [
+                    "Data persistence using the browser's local storage.",
+                    "Creating an interactive user interface for task manipulation.",
+                    "Implementing the logic for filtering and displaying tasks."
+                ]
+            },
+            "learnings": {
+                "es": [
+                    "Manipulación del DOM y gestión de eventos en JavaScript puro.",
+                    "Conceptos de almacenamiento de datos en el lado del cliente.",
+                    "Estructuración de un proyecto de JavaScript vanilla de forma modular."
+                ],
+                "en": [
+                    "DOM manipulation and event management in pure JavaScript.",
+                    "Concepts of client-side data storage.",
+                    "Structuring a vanilla JavaScript project in a modular way."
+                ]
+            },
+            "image": "/Task-App.png",
+            "tags": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "link": "https://task-app-dr.netlify.app/"
+        }
+    ]
+}

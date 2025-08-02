@@ -4,6 +4,7 @@ export const NAVIGATION_LINKS = [
   { href: "#experience", translationKey: "Experience" },
   { href: "#personal-projects", translationKey: "Personal Projects" },
   { href: "#projects", translationKey: "Work Projects" },
+  { href: "#contact", translationKey: "Contact" },
 ];
 
 // Social media links configuration
@@ -19,10 +20,10 @@ export const SOCIAL_LINKS = [
     icon: "linkedin",
   },
   {
-    href: "download/CV-Daniel_Estupiñán.pdf",
+    href: "/CV.pdf",
     ariaLabel: "Download CV",
     icon: "download",
-    download: "Daniel_Estupiñán_CV",
+    download: "Daniel_Estupiñán_CV.pdf",
   },
 ];
 

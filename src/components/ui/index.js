@@ -1,5 +1,6 @@
 // Export all UI components for easy importing
 export { default as TechnologyIcon } from './TechnologyIcon';
+export { default as TechnologyCategory } from './TechnologyCategory';
 export { default as ExternalLinkIcon } from './ExternalLinkIcon';
 export { default as Tag } from './Tag';
 export { default as SectionHeader } from './SectionHeader';

@@ -35,9 +35,9 @@ export const LANGUAGES = [
 
 // Personal information
 export const PERSONAL_INFO = {
-  name: "Daniel Estupiñán",
-  title: "Frontend Developer",
-  description: "Desarrollador especializado en Frontend con más de 4 años de experiencia en Magento 2, React, NestJS y FastAPI. Apasionado por construir experiencias digitales robustas, rápidas y escalables.",
+  name: "Daniel Estupiñán Ramos",
+  title: "Frontend Developer especializado en eCommerce",
+  description: "Desarrollador especializado en Frontend con más de 4 años de experiencia en eCommerce (Magento 2), React, FastAPI y NestJS. Apasionado por crear experiencias digitales robustas, rápidas y escalables, con expertise en APIs seguras y despliegues en la nube.",
 };
 
 // Technology skills configuration

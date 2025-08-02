@@ -2,6 +2,40 @@
     "projects": [
         {
             "id": 1,
+            "name": "FinanzasApp",
+            "description": "API REST completa para gestión de finanzas personales con FastAPI, PostgreSQL y despliegue en Heroku + Aiven. Incluye autenticación JWT, CRUD completo de transacciones y reportes financieros.",
+            "image": "projects/financeIA.png",
+            "url": "https://fastapi-finanzas-app-374b5c820ee8.herokuapp.com/docs",
+            "skills": [
+                "FastAPI",
+                "PostgreSQL",
+                "SQLAlchemy",
+                "JWT",
+                "Heroku",
+                "Aiven",
+                "Python",
+                "Pydantic"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Taskly-API",
+            "description": "API de gestión de tareas con FastAPI y MySQL. Incluye operaciones CRUD avanzadas, sistema de autenticación robusto, documentación automática con Swagger y testing con pytest.",
+            "image": "projects/tasklyApi.png",
+            "url": "https://taskly-fastapi-app-839607d4d977.herokuapp.com/docs",
+            "skills": [
+                "FastAPI",
+                "MySQL",
+                "SQLAlchemy",
+                "JWT",
+                "Pytest",
+                "Heroku",
+                "Aiven",
+                "Swagger"
+            ]
+        },
+        {
+            "id": 4,
             "name": "Ally360",
             "description": "Sistema ERP que permite la contabilidad, sistema POS. Herramienta para que el empresario tenga acceso a un software que le permita planificar, analizar y gestionar toda su empresa. Además de contar con una interfaz de usuario amigable y rápida. ",
             "image": "https://ally360.netlify.app/logo/logoFondoTransparentesvg.svg",
@@ -20,7 +54,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": 5,
             "name": "ToDo App",
             "description": "Aplicación TODO que permite crear, editar, visualizar y cambiar de estado las tareas. construida en React, usando Custom-hooks para la persistencia de datos atraves del localstorage, React Context para el manejo del estado global y Chakra IU para la interfaz de usuario",
             "image": "/Task-App.png",
@@ -36,7 +70,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": 6,
             "name": "GIFOS",
             "description": "Aplicación web que funciona como un catálogo de GIFs, Diseñada en HTML, CSS, y JavaScript Vanilla por medio de la metodología SPA para lograr una mayor fluidez de la página, además de ser Mobile first y adaptado a todas las pantallas. Logrando funciones de búsqueda, interacción con una API externa utilizando asincróncronismo y aprovechando las herramientas nativas del navegador, como capturar imágenes a través de una cámara web.",
             "image": "/Gifos.png",
@@ -51,6 +85,93 @@
         }
     ],
     "detailedProjectInfo": [
+        {
+            "title": "FinanzasApp",
+            "description": "API REST para gestión de finanzas personales",
+            "detailedDescription": {
+                "es": "FinanzasApp es una API REST completa desarrollada con FastAPI para la gestión integral de finanzas personales. Permite a los usuarios registrar ingresos, gastos, crear categorías personalizadas y generar reportes financieros detallados. La aplicación utiliza PostgreSQL como base de datos principal y está desplegada en Heroku con Aiven para la gestión de la base de datos.",
+                "en": "FinanzasApp is a comprehensive REST API developed with FastAPI for comprehensive personal finance management. It allows users to record income, expenses, create custom categories, and generate detailed financial reports. The application uses PostgreSQL as the main database and is deployed on Heroku with Aiven for database management."
+            },
+            "challenges": {
+                "es": [
+                    "Implementación de autenticación JWT segura y renovación de tokens.",
+                    "Optimización de consultas complejas para reportes financieros.",
+                    "Configuración de despliegue en Heroku con base de datos externa en Aiven."
+                ],
+                "en": [
+                    "Implementation of secure JWT authentication and token renewal.",
+                    "Optimization of complex queries for financial reports.",
+                    "Deployment configuration on Heroku with external database on Aiven."
+                ]
+            },
+            "learnings": {
+                "es": [
+                    "Desarrollo avanzado con FastAPI y SQLAlchemy.",
+                    "Gestión de bases de datos PostgreSQL en la nube.",
+                    "Implementación de testing automatizado con pytest."
+                ],
+                "en": [
+                    "Advanced development with FastAPI and SQLAlchemy.",
+                    "PostgreSQL database management in the cloud.",
+                    "Implementation of automated testing with pytest."
+                ]
+            },
+            "image": "projects/financeIA.png",
+            "tags": [
+                "FastAPI",
+                "PostgreSQL",
+                "SQLAlchemy",
+                "JWT",
+                "Heroku",
+                "Aiven",
+                "Python"
+            ],
+            "link": "https://fastapi-finanzas-app-374b5c820ee8.herokuapp.com/docs",
+            "link-github": "https://github.com/DanielE0802/Finance-IA"
+        },
+        {
+            "title": "Taskly-API",
+            "description": "API de gestión de tareas con FastAPI",
+            "detailedDescription": {
+                "es": "Taskly-API es una API REST desarrollada con FastAPI para la gestión avanzada de tareas y proyectos. Incluye funcionalidades como creación de tareas con prioridades, asignación a usuarios, seguimiento de progreso, notificaciones y generación de reportes de productividad. Utiliza MySQL como base de datos y está completamente documentada con Swagger.",
+                "en": "Taskly-API is a REST API developed with FastAPI for advanced task and project management. It includes functionalities such as creating tasks with priorities, user assignment, progress tracking, notifications, and productivity report generation. It uses MySQL as database and is fully documented with Swagger."
+            },
+            "challenges": {
+                "es": [
+                    "Implementación de sistema de notificaciones en tiempo real.",
+                    "Optimización de consultas para reportes de productividad.",
+                    "Testing exhaustivo con pytest y cobertura de código."
+                ],
+                "en": [
+                    "Implementation of real-time notification system.",
+                    "Query optimization for productivity reports.",
+                    "Comprehensive testing with pytest and code coverage."
+                ]
+            },
+            "learnings": {
+                "es": [
+                    "Desarrollo de APIs REST con documentación automática.",
+                    "Implementación de testing avanzado y TDD.",
+                    "Gestión de bases de datos MySQL en la nube."
+                ],
+                "en": [
+                    "Development of REST APIs with automatic documentation.",
+                    "Implementation of advanced testing and TDD.",
+                    "MySQL database management in the cloud."
+                ]
+            },
+            "image": "projects/tasklyApi.png",
+            "tags": [
+                "FastAPI",
+                "MySQL",
+                "SQLAlchemy",
+                "JWT",
+                "Pytest",
+                "Swagger"
+            ],
+            "link": "https://taskly-fastapi-app-839607d4d977.herokuapp.com/docs",
+            "link-github": "https://github.com/DanielE0802/taskly-api"
+        },
         {
             "title": "Ally360",
             "description": "Sistema ERP que permite la contabilidad, sistema POS.",
@@ -89,6 +210,11 @@
                 "CSS",
                 "JavaScript",
                 "Chakra-UI",
+                "Redux",
+                "NestJS",
+                "PostgreSQL",
+                "TypeORM",
+                "JWT",
                 "Custom-Hooks",
                 "React-Context"
             ],

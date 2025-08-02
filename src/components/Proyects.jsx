@@ -23,37 +23,30 @@ const ProjectItem = ({ project, onOpenModal, detailedProjectInfo, t }) => {
     console.log("Card clicked - target:", e.target);
     console.log("Card clicked - currentTarget:", e.currentTarget);
     
-    // Si el clic fue en el enlace del título o sus elementos hijos, no abrir el modal
     const linkElement = e.target.closest('a[href]');
     if (linkElement) {
       console.log("Click on link, preventing modal");
       return;
     }
 
-    console.log("Opening modal for project:", project);
-    // Buscar información detallada del proyecto
     const detailedInfo = detailedProjectInfo.find(
       info => {
-        // Buscar por diferentes combinaciones de nombre
         const projectName = project.name.toLowerCase().trim();
         const infoTitle = info.title.toLowerCase().trim();
         
         return infoTitle === projectName || 
                infoTitle.includes(projectName) ||
                projectName.includes(infoTitle) ||
-               // Buscar coincidencias específicas conocidas
                (projectName.includes('todo') && infoTitle.includes('task')) ||
                (projectName.includes('ally360') && infoTitle.includes('ally')) ||
                (projectName.includes('gifos') && infoTitle.includes('gifos'));
       }
     );
     
-    console.log("Detailed project info found:", detailedInfo);
 
     if (detailedInfo) {
       onOpenModal(detailedInfo);
     } else {
-      // Si no se encuentra información detallada, crear un objeto básico
       const basicInfo = {
         title: project.name,
         description: project.description,
@@ -92,7 +85,7 @@ const ProjectItem = ({ project, onOpenModal, detailedProjectInfo, t }) => {
           </h3>
           
           <p className="mt-2 text-sm leading-normal">
-            {project.description}
+            {t(project.description)}
           </p>
           
           <ul className="mt-2 flex flex-wrap" aria-label={t("Technologies used:")}>
@@ -165,7 +158,6 @@ const Proyects = ({ proyectsData, link }) => {
           ))}
         </ul>
         
-        {/* Modal para mostrar detalles del proyecto */}
         <ProjectModal
           isOpen={isModalOpen}
           onClose={handleCloseModal}

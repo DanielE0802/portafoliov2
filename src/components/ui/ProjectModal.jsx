@@ -27,7 +27,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             {t("projects.modal.description")}
           </h3>
           <p className="text-gray-300 leading-relaxed">
-            {project.detailedDescription?.[currentLang] || project.description}
+            {project.detailedDescription?.[currentLang] || t(project.description)}
           </p>
         </section>
 

@@ -133,7 +133,7 @@ function Sidebar() {
   const { t } = useTranslation();
 
   return (
-    <header className="text-left lg:sticky lg:top-0 lg:flex lg:h-[95vh] lg:w-1/2 lg:flex-col lg:justify-between lg:py-12">
+    <header className="text-left lg:sticky lg:top-0 lg:flex lg:h-[95vh] lg:w-1/2 lg:flex-col lg:justify-between lg:py-8">
       <div>
         {/* My picture */}
         <div className="mb-8 flex flex-col items-start">
@@ -143,7 +143,7 @@ function Sidebar() {
             className="mb-0 h-44 w-44 rounded-full border-2 border-slate-200/10 object-cover shadow-lg"
           />
         </div>
-        <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+        <h1 className="text-2xl font-bold tracking-tight text-slate-200 sm:text-5xl">
           <a href="/">{PERSONAL_INFO.name}</a>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl text-left">
@@ -154,7 +154,7 @@ function Sidebar() {
         </p>
         
         <nav className="nav hidden lg:block" aria-label={t("In-page jump links")}>
-          <ul className="mt-16 w-max">
+          <ul className="mt-8 w-max">
             {NAVIGATION_LINKS.map((link, index) => (
               <NavigationItem 
                 key={link.href} 

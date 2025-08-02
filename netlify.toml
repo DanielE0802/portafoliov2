@@ -53,3 +53,9 @@
   to = "https://danielestupinanr.netlify.app/:splat"
   status = 301
   force = true
+
+# SPA fallback: redirect all requests to index.html to support client-side routing and avoid 404s
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

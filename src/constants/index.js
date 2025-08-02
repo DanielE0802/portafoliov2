@@ -37,7 +37,7 @@ export const LANGUAGES = [
 export const PERSONAL_INFO = {
   name: "Daniel Estupiñán",
   title: "Frontend Developer",
-  description: "3 years of experience in web development, with a focus on frontend",
+  description: "Desarrollador especializado en Frontend con más de 4 años de experiencia en Magento 2, React, NestJS y FastAPI. Apasionado por construir experiencias digitales robustas, rápidas y escalables.",
 };
 
 // Technology skills configuration

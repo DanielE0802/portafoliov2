@@ -5,8 +5,8 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        "3 years of experience in web development, with a focus on frontend":
-          "3 years of experience in web development, with a focus on frontend",
+        "Front-end developer with over four years of experience in Magento 2, React, NestJS, and FastAPI. Passionate about building robust, fast, and scalable digital experiences.":
+          "Front-end developer with over four years of experience in Magento 2, React, NestJS, and FastAPI. Passionate about building robust, fast, and scalable digital experiences.",
         "Frontend Developer": "Frontend Developer",
         About: "About",
         Skills: "Skills",
@@ -76,8 +76,8 @@ i18n.use(initReactI18next).init({
     es: {
       translation: {
         "Frontend Developer": "Desarrollador Frontend",
-        "3 years of experience in web development, with a focus on frontend":
-          "3 años de experiencia en desarrollo web, con enfoque en frontend",
+        "Front-end developer with over four years of experience in Magento 2, React, NestJS, and FastAPI. Passionate about building robust, fast, and scalable digital experiences.":
+          "Desarrollador especializado en Frontend con más de 4 años de experiencia en Magento 2, React, NestJS y FastAPI. Apasionado por construir experiencias digitales robustas, rápidas y escalables.",
         About: "Acerca de mi",
         Skills: "Habilidades",
         Experience: "Experiencia",

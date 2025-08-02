@@ -133,14 +133,14 @@ function Sidebar() {
   const { t } = useTranslation();
 
   return (
-    <header className="text-left lg:sticky lg:top-0 lg:flex lg:h-[95vh] lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+    <header className="text-left lg:sticky lg:top-0 lg:flex lg:h-[95vh] lg:w-1/2 lg:flex-col lg:justify-between lg:py-12">
       <div>
         {/* My picture */}
         <div className="mb-8 flex flex-col items-start">
           <img 
             src="/profile.jpeg" 
             alt={PERSONAL_INFO.name} 
-            className="mb-0 h-48 w-48 rounded-full border-2 border-slate-200/10 object-cover shadow-lg"
+            className="mb-0 h-44 w-44 rounded-full border-2 border-slate-200/10 object-cover shadow-lg"
           />
         </div>
         <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">

@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import TechnologyIcon from "./ui/TechnologyIcon";
 import SectionHeader from "./ui/SectionHeader";
@@ -33,7 +34,7 @@ const technologiesWithImages = [
  * About component displaying personal information and technology skills
  * @returns {JSX.Element} About section with bio and technology showcase
  */
-function About() {
+const About = React.memo(() => {
   const { t } = useTranslation();
 
   // Company links configuration
@@ -127,6 +128,8 @@ function About() {
       </div>
     </section>
   );
-}
+});
+
+About.displayName = 'About';
 
 export default About;

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://danielestupinanr.netlify.app/sitemap.xml
+
+# Block access to source maps and config files
+Disallow: /*.map$
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: *.json$

@@ -1,10 +1,12 @@
 
+import React from "react";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
 import SectionHeader from "./ui/SectionHeader";
 import ExternalLinkIcon from "./ui/ExternalLinkIcon";
 import Tag from "./ui/Tag";
-import { createLinkProps, createImageProps } from "../utils/helpers";
+import { LazyImage } from "./ui";
+import { createLinkProps } from "../utils/helpers";
 import { ProjectItemShape } from "../types/propTypes";
 
 /**
@@ -13,13 +15,7 @@ import { ProjectItemShape } from "../types/propTypes";
  * @param {Object} props.project - Project data object
  * @returns {JSX.Element} Project item with details
  */
-const ProjectItem = ({ project }) => {
-  const imageProps = createImageProps(project.image, project.name, {
-    width: "200",
-    height: "48",
-    className: "rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1",
-  });
-
+const ProjectItem = React.memo(({ project }) => {
   return (
     <li className="mb-12">
       <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
@@ -50,12 +46,19 @@ const ProjectItem = ({ project }) => {
           </ul>
         </div>
         
-        <img {...imageProps} />
+        <LazyImage
+          src={project.image}
+          alt={`${project.name} project screenshot`}
+          width="200"
+          height="48"
+          className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+        />
       </div>
     </li>
   );
-};
+});
 
+ProjectItem.displayName = 'ProjectItem';
 ProjectItem.propTypes = {
   project: ProjectItemShape.isRequired,
 };
@@ -67,7 +70,7 @@ ProjectItem.propTypes = {
  * @param {string} props.link - Section ID for navigation
  * @returns {JSX.Element} Projects section with portfolio items
  */
-function Proyects({ proyectsData, link }) {
+const Proyects = React.memo(({ proyectsData, link }) => {
   const { t } = useTranslation();
   
   return (
@@ -120,8 +123,9 @@ function Proyects({ proyectsData, link }) {
       </div>
     </section>
   );
-}
+});
 
+Proyects.displayName = 'Proyects';
 Proyects.propTypes = {
   proyectsData: PropTypes.arrayOf(ProjectItemShape).isRequired,
   link: PropTypes.string.isRequired,

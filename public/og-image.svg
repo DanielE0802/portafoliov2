@@ -1,0 +1,12 @@
+<!-- OG Image SVG placeholder - to be replaced with actual image -->
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <rect x="50" y="50" width="1100" height="530" fill="#1e293b" rx="20"/>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#f1f5f9">Daniel Estupiñán</text>
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="32" text-anchor="middle" fill="#64748b">Frontend Developer</text>
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#64748b">React.js | JavaScript | TypeScript</text>
+  <text x="600" y="450" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#14b8a6">3+ years of experience</text>
+  <circle cx="150" cy="150" r="30" fill="#14b8a6"/>
+  <circle cx="1050" cy="480" r="25" fill="#06b6d4"/>
+  <circle cx="200" cy="500" r="20" fill="#8b5cf6"/>
+</svg>

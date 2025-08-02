@@ -9,8 +9,23 @@ A modern, responsive portfolio website showcasing my skills and experience as a 
 - **Custom Cursor**: Interactive cursor animation
 - **Smooth Animations**: Elegant transitions and hover effects
 - **Modern Tech Stack**: Built with React, Vite, and TailwindCSS
-- **Accessibility**: Following WCAG guidelines for better accessibility
-- **Performance Optimized**: Fast loading with lazy loading and optimized images
+- **Performance Optimized**: 
+  - React.memo for component optimization
+  - Lazy loading for images with Intersection Observer
+  - Service Worker for caching
+- **Accessibility Features**:
+  - ARIA labels and roles
+  - Keyboard navigation support
+  - Screen reader optimization
+  - Skip navigation link
+  - High contrast mode support
+  - Reduced motion preferences
+- **SEO Optimized**:
+  - Meta tags for social sharing
+  - Structured data (JSON-LD)
+  - Sitemap.xml
+  - Open Graph and Twitter Card support
+  - Optimized for search engines
 
 ## 🛠️ Tech Stack
 

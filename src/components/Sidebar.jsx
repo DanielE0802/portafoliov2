@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
 import { NAVIGATION_LINKS, SOCIAL_LINKS, PERSONAL_INFO } from "../constants";
@@ -11,22 +12,28 @@ import { createLinkProps } from "../utils/helpers";
  * @param {boolean} props.isActive - Whether this link is active
  * @returns {JSX.Element} Navigation list item
  */
-function NavigationItem({ link, t, isActive = false }) {
+const NavigationItem = React.memo(({ link, t, isActive = false }) => {
   return (
     <li>
       <a 
         className={`group flex items-center py-3 ${isActive ? 'active' : ''}`} 
         href={link.href}
+        aria-label={`Navigate to ${t(link.translationKey)} section`}
+        aria-current={isActive ? 'page' : undefined}
       >
-        <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+        <span 
+          className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"
+          aria-hidden="true"
+        ></span>
         <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
           {t(link.translationKey)}
         </span>
       </a>
     </li>
   );
-}
+});
 
+NavigationItem.displayName = 'NavigationItem';
 NavigationItem.propTypes = {
   link: PropTypes.shape({
     href: PropTypes.string.isRequired,

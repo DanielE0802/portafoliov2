@@ -6,6 +6,7 @@ import CustomCursor from "./components/CustomCursor";
 import CustomCursorManager from "./components/CustomCursorManager";
 import Experience from "./components/Experience";
 import Proyects from "./components/Proyects";
+import Contact from "./components/Contact";
 import { SkipNavigation } from "./components/ui";
 import proyectsData from "./data/proyects.json";
 
@@ -32,6 +33,7 @@ function App() {
             <About />
             <Experience />
             <Proyects proyectsData={proyectsData} link="personal-projects" />
+            <Contact />
           </main>
         </div>
       </div>

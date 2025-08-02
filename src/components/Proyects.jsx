@@ -1,11 +1,11 @@
 
-import React from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
 import SectionHeader from "./ui/SectionHeader";
 import ExternalLinkIcon from "./ui/ExternalLinkIcon";
 import Tag from "./ui/Tag";
-import { LazyImage } from "./ui";
+import { LazyImage, ProjectModal } from "./ui";
 import { createLinkProps } from "../utils/helpers";
 import { ProjectItemShape } from "../types/propTypes";
 
@@ -13,21 +13,76 @@ import { ProjectItemShape } from "../types/propTypes";
  * ProjectItem component for individual project entries
  * @param {Object} props - Component props
  * @param {Object} props.project - Project data object
+ * @param {Function} props.onOpenModal - Function to open project modal
+ * @param {Array} props.detailedProjectInfo - Array with detailed project information
  * @returns {JSX.Element} Project item with details
  */
-const ProjectItem = React.memo(({ project }) => {
+const ProjectItem = ({ project, onOpenModal, detailedProjectInfo }) => {
+  const handleCardClick = (e) => {
+    console.log("Card clicked - target:", e.target);
+    console.log("Card clicked - currentTarget:", e.currentTarget);
+    
+    // Si el clic fue en el enlace del título o sus elementos hijos, no abrir el modal
+    const linkElement = e.target.closest('a[href]');
+    if (linkElement) {
+      console.log("Click on link, preventing modal");
+      return;
+    }
+
+    console.log("Opening modal for project:", project);
+    // Buscar información detallada del proyecto
+    const detailedInfo = detailedProjectInfo.find(
+      info => {
+        // Buscar por diferentes combinaciones de nombre
+        const projectName = project.name.toLowerCase().trim();
+        const infoTitle = info.title.toLowerCase().trim();
+        
+        return infoTitle === projectName || 
+               infoTitle.includes(projectName) ||
+               projectName.includes(infoTitle) ||
+               // Buscar coincidencias específicas conocidas
+               (projectName.includes('todo') && infoTitle.includes('task')) ||
+               (projectName.includes('ally360') && infoTitle.includes('ally')) ||
+               (projectName.includes('gifos') && infoTitle.includes('gifos'));
+      }
+    );
+    
+    console.log("Detailed project info found:", detailedInfo);
+
+    if (detailedInfo) {
+      onOpenModal(detailedInfo);
+    } else {
+      // Si no se encuentra información detallada, crear un objeto básico
+      const basicInfo = {
+        title: project.name,
+        description: project.description,
+        image: project.image,
+        tags: project.skills,
+        link: project.url,
+        detailedDescription: {
+          es: project.description,
+          en: project.description
+        }
+      };
+      onOpenModal(basicInfo);
+    }
+  };
+
   return (
     <li className="mb-12">
-      <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-        <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+      <div 
+        className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 cursor-pointer"
+        onClick={handleCardClick}
+      >
+        <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg pointer-events-none"></div>
         
-        <div className="z-10 sm:order-2 sm:col-span-6">
+        <div className="z-10 sm:order-2 sm:col-span-6 relative">
           <h3>
             <a
-              className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+              className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base relative z-30"
               {...createLinkProps(project.url, true, project.name)}
+              onClick={(e) => e.stopPropagation()}
             >
-              <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
               <span>
                 {project.name}
                 <ExternalLinkIcon />
@@ -56,11 +111,12 @@ const ProjectItem = React.memo(({ project }) => {
       </div>
     </li>
   );
-});
+};
 
-ProjectItem.displayName = 'ProjectItem';
 ProjectItem.propTypes = {
   project: ProjectItemShape.isRequired,
+  onOpenModal: PropTypes.func.isRequired,
+  detailedProjectInfo: PropTypes.array.isRequired,
 };
 
 /**
@@ -70,8 +126,21 @@ ProjectItem.propTypes = {
  * @param {string} props.link - Section ID for navigation
  * @returns {JSX.Element} Projects section with portfolio items
  */
-const Proyects = React.memo(({ proyectsData, link }) => {
+const Proyects = ({ proyectsData, link }) => {
   const { t } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+  
+  const handleOpenModal = (project) => {
+    console.log("Opening modal for project:", project);
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
   
   return (
     <section
@@ -83,10 +152,22 @@ const Proyects = React.memo(({ proyectsData, link }) => {
       
       <div>
         <ul className="group/list">
-          {proyectsData.map((project) => (
-            <ProjectItem key={project.id} project={project} />
+          {proyectsData.projects?.map((project) => (
+            <ProjectItem 
+              key={project.id} 
+              project={project} 
+              onOpenModal={handleOpenModal}
+              detailedProjectInfo={proyectsData.detailedProjectInfo || []}
+            />
           ))}
         </ul>
+        
+        {/* Modal para mostrar detalles del proyecto */}
+        <ProjectModal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          project={selectedProject}
+        />
         
         {/* Uncomment when project archive page is available */}
         {/* <div className="mt-12">
@@ -123,11 +204,13 @@ const Proyects = React.memo(({ proyectsData, link }) => {
       </div>
     </section>
   );
-});
+};
 
-Proyects.displayName = 'Proyects';
 Proyects.propTypes = {
-  proyectsData: PropTypes.arrayOf(ProjectItemShape).isRequired,
+  proyectsData: PropTypes.shape({
+    projects: PropTypes.arrayOf(ProjectItemShape).isRequired,
+    detailedProjectInfo: PropTypes.array,
+  }).isRequired,
   link: PropTypes.string.isRequired,
 };
 

@@ -65,7 +65,7 @@ const About = React.memo(() => {
     <section
       id="about"
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-justify"
-      aria-label="About me"
+      aria-label={t("About me")}
     >
       <SectionHeader title={t("About")} />
       
@@ -111,7 +111,7 @@ const About = React.memo(() => {
           , {t("en el cargo de Senior Magento Frontend Developer. Soy una persona que está en constante aprendizaje, Estas son algunas tecnologías con las que he estado trabajando recientemente:")}
         </p>
         
-        <section className="" aria-label="Technology skills">
+        <section className="" aria-label={t("Technology skills")}>
           <div className="py-2 lg:py-2 mx-auto max-w-screen-xl px-0">
             <div className="grid grid-cols-5 gap-8 text-gray-500 sm:gap-6 md:grid-cols-5 lg:grid-cols-6 dark:text-gray-400">
               {technologiesWithImages.map((tech) => (

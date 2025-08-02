@@ -153,7 +153,7 @@ function Sidebar() {
           {t(PERSONAL_INFO.description)}
         </p>
         
-        <nav className="nav hidden lg:block" aria-label="In-page jump links">
+        <nav className="nav hidden lg:block" aria-label={t("In-page jump links")}>
           <ul className="mt-16 w-max">
             {NAVIGATION_LINKS.map((link, index) => (
               <NavigationItem 
@@ -167,7 +167,7 @@ function Sidebar() {
         </nav>
       </div>
       
-      <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
+      <ul className="ml-1 mt-8 flex items-center" aria-label={t("Social media")}>
         {SOCIAL_LINKS.map((link) => (
           <SocialLink key={link.href} link={link} />
         ))}

@@ -15,9 +15,10 @@ import { ProjectItemShape } from "../types/propTypes";
  * @param {Object} props.project - Project data object
  * @param {Function} props.onOpenModal - Function to open project modal
  * @param {Array} props.detailedProjectInfo - Array with detailed project information
+ * @param {Function} props.t - Translation function
  * @returns {JSX.Element} Project item with details
  */
-const ProjectItem = ({ project, onOpenModal, detailedProjectInfo }) => {
+const ProjectItem = ({ project, onOpenModal, detailedProjectInfo, t }) => {
   const handleCardClick = (e) => {
     console.log("Card clicked - target:", e.target);
     console.log("Card clicked - currentTarget:", e.currentTarget);
@@ -94,7 +95,7 @@ const ProjectItem = ({ project, onOpenModal, detailedProjectInfo }) => {
             {project.description}
           </p>
           
-          <ul className="mt-2 flex flex-wrap" aria-label="Technologies used:">
+          <ul className="mt-2 flex flex-wrap" aria-label={t("Technologies used:")}>
             {project.skills.map((skill) => (
               <Tag key={skill} text={skill} />
             ))}
@@ -117,6 +118,7 @@ ProjectItem.propTypes = {
   project: ProjectItemShape.isRequired,
   onOpenModal: PropTypes.func.isRequired,
   detailedProjectInfo: PropTypes.array.isRequired,
+  t: PropTypes.func.isRequired,
 };
 
 /**
@@ -146,7 +148,7 @@ const Proyects = ({ proyectsData, link }) => {
     <section
       id={link}
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-      aria-label="Selected projects"
+      aria-label={t("Selected projects")}
     >
       <SectionHeader title={t("Personal Projects")} />
       
@@ -158,6 +160,7 @@ const Proyects = ({ proyectsData, link }) => {
               project={project} 
               onOpenModal={handleOpenModal}
               detailedProjectInfo={proyectsData.detailedProjectInfo || []}
+              t={t}
             />
           ))}
         </ul>

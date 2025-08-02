@@ -118,6 +118,7 @@ ProjectModal.propTypes = {
     image: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     link: PropTypes.string.isRequired,
+    "link-github": PropTypes.string,
   }),
 };
 

@@ -20,7 +20,7 @@ export const SOCIAL_LINKS = [
     icon: "linkedin",
   },
   {
-    href: "/CV.pdf",
+    href: "/CV_fullstack_daniel_estupinan.pdf",
     ariaLabel: "Download CV",
     icon: "download",
     download: "Daniel_Estupiñán_CV.pdf",

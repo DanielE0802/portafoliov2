@@ -15,6 +15,7 @@ import gitImage from "../assets/git.svg";
 import nodeJsImage from "../assets/nodejs.svg";
 import htmlImage from "../assets/html.svg";
 import cssImage from "../assets/css.svg";
+// Using Devicon CDN for official-style logos fetched from the internet
 
 // Map imported images to technology objects
 const technologiesWithImages = [
@@ -26,9 +27,23 @@ const technologiesWithImages = [
   { name: "Magento 2", imagePath: magentoImage, height: "h-12" },
   { name: "Git", imagePath: gitImage, height: "h-12" },
   { name: "Node JS", imagePath: nodeJsImage, height: "h-12" },
+  { name: "NestJS", imagePath: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/NestJS-logo-wordmark.svg/1200px-NestJS-logo-wordmark.svg.png", height: "h-12" },
+  { name: "FastAPI", imagePath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg", height: "h-12" },
+  { name: "Docker", imagePath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", height: "h-12" },
   { name: "HTML", imagePath: htmlImage, height: "h-12" },
   { name: "CSS", imagePath: cssImage, height: "h-12" },
 ];
+
+// Helper to calculate age from birthdate (08 Feb 2002)
+const getAge = (birthDate) => {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+};
 
 /**
  * About component displaying personal information and technology skills
@@ -36,8 +51,8 @@ const technologiesWithImages = [
  */
 const About = React.memo(() => {
   const { t } = useTranslation();
+  const age = React.useMemo(() => getAge(new Date(2002, 1, 8)), []); // Month is 0-indexed
 
-  // Company links configuration
   const companyLinks = [
     {
       href: "https://www.linkedin.com/in/daniel-estupi%C3%B1%C3%A1n/overlay/1635471079928/single-media-viewer/?profileId=ACoAADQPELYBG7-Xdqra7yAcasY77pk1I6lR1tQ",
@@ -56,8 +71,8 @@ const About = React.memo(() => {
       text: "Universum",
     },
     {
-      href: "https://stefanini.com/es",
-      text: "Stefanini LATAM",
+      href: "https://omni.pro/",
+      text: "Omni.Pro",
     },
   ];
 
@@ -71,7 +86,7 @@ const About = React.memo(() => {
       
       <div>
         <p className="mb-4">
-          {t("¡Hola! 👋 Soy Daniel. Tengo 21 años y soy de Colombia, mi interés por el Desarrollo de Software nació en 2017 cuando me llamó la atención como desarrollaban los juegos, comencé haciendo cosas muy básicas en Unity junto a un amigo, en 2020 decidí hacer parte de Protalento, en la que atraves de Acamica aprendí")}
+          {t("¡Hola! 👋 Soy Daniel. Tengo {{age}} años y soy de Colombia, mi interés por el Desarrollo de Software nació en 2017 cuando me llamó la atención como desarrollaban los juegos, comencé haciendo cosas muy básicas en Unity junto a un amigo, en 2020 decidí hacer parte de Protalento, en la que atraves de Acamica aprendí", { age })}
           <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             {...createLinkProps(companyLinks[0].href, true, "Certificado Acamica")}
@@ -108,7 +123,7 @@ const About = React.memo(() => {
           >
             {companyLinks[4].text}
           </a>
-          , {t("en el cargo de Senior Magento Frontend Developer. Soy una persona que está en constante aprendizaje, Estas son algunas tecnologías con las que he estado trabajando recientemente:")}
+          , {t("en el cargo de Semi-Senior Magento Frontend Developer. Soy una persona que está en constante aprendizaje, Estas son algunas tecnologías con las que he estado trabajando recientemente:")}
         </p>
         
         <section className="" aria-label={t("Technology skills")}>

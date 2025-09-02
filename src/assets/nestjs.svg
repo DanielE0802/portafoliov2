@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NestJS">
+  <title>NestJS</title>
+  <rect rx="24" width="256" height="256" fill="#E0234E"/>
+  <g fill="#ffffff" font-family="Inter, Arial, Helvetica, sans-serif">
+    <text x="50%" y="54%" font-size="76" text-anchor="middle" font-weight="800" dominant-baseline="middle">Nest</text>
+    <text x="50%" y="78%" font-size="48" text-anchor="middle" font-weight="700" dominant-baseline="middle">JS</text>
+  </g>
+</svg>

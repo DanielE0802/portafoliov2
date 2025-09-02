@@ -4,7 +4,7 @@
         "company": "Stefanini Latam",
         "job": "Senior Front-end Magento Developer",
         "dateInit": "Agosto 2023",
-        "dateEnd": "Presente",
+        "dateEnd": "Junio 2024",
         "link": "https://www.stefanini.com/es/",
         "description": "Implementación de nuevas funcionalidades, vistas e interaciónes en la plataforma de e-commerce de Movistar Peru, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros.",
         "tags": [
@@ -26,7 +26,7 @@
         "company": "Corporación Talentum",
         "job": "Full-stack Developer",
         "dateInit": "Enero 2023",
-        "dateEnd": "Presente",
+        "dateEnd": "Enero 2024",
         "link": "https://talentum.edu.co/",
         "description": "Desarrollo del dashboard para el proyecto Universum, el cual permite a los docentes y administrativos de las instituciones educativas gestionar y analisar la información suminitrada por el juego, permitiendo la generación de reportes y estadísticas de las actividades. Permitiendo filtrar por institución, grado, grupo, estudiante, entre otros. Actualmente continuo trabajando en otros proyectos de la empresa.",
         "tags": [
@@ -62,6 +62,27 @@
             "GitFlow",
             "Scrum",
             "Linux"
+        ]
+    },
+    {
+        "id": 0,
+        "company": "Omni.Pro",
+        "job": "Semi-Senior Magento Frontend Developer",
+        "dateInit": "Junio 2024",
+        "dateEnd": "Presente",
+        "link": "https://omni.pro/",
+        "description": "Desarrollo de soluciones eCommerce en Magento 2 Cloud y Enterprise para Kohler, Sportline y Polar. Personalización de temas (PHTML, XML, Knockout.js), implementación de módulos personalizados y optimización de SEO y rendimiento.",
+        "tags": [
+            "Magento 2",
+            "PHTML",
+            "XML",
+            "JavaScript",
+            "Knockout.js",
+            "SEO",
+            "Performance",
+            "Git",
+            "Jira",
+            "Scrum"
         ]
     }
 ]

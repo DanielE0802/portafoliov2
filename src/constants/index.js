@@ -50,6 +50,9 @@ export const TECHNOLOGIES = [
   { name: "Magento 2", imagePath: "../assets/magento.svg", height: "h-12" },
   { name: "Git", imagePath: "../assets/git.svg", height: "h-12" },
   { name: "Node JS", imagePath: "../assets/nodejs.svg", height: "h-12" },
+  { name: "NestJS", imagePath: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/NestJS-logo-wordmark.svg/1200px-NestJS-logo-wordmark.svg.png", height: "h-12" },
+  { name: "FastAPI", imagePath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg", height: "h-12" },
+  { name: "Docker", imagePath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", height: "h-12" },
   { name: "HTML", imagePath: "../assets/html.svg", height: "h-12" },
   { name: "CSS", imagePath: "../assets/css.svg", height: "h-12" },
 ];

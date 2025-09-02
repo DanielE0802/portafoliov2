@@ -146,7 +146,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Email**: daniel.estupinang@utp.edu.co
 - **LinkedIn**: [Daniel Estupiñán](https://www.linkedin.com/in/danielestupinan/)
 - **GitHub**: [DanielE0802](https://github.com/DanielE0802)
 

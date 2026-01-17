@@ -27,13 +27,17 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
+      // Crear FormData para envío a Netlify
+      const formData = new FormData();
+      formData.append('form-name', 'contact');
+      formData.append('name', e.target.name.value);
+      formData.append('email', e.target.email.value);
+      formData.append('subject', e.target.subject.value);
+      formData.append('message', e.target.message.value);
+
       const response = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          'form-name': 'contact',
-          ...formData
-        }).toString()
+        body: formData
       });
 
       if (response.ok) {
@@ -43,6 +47,7 @@ const Contact = () => {
         setSubmitStatus('error');
       }
     } catch (error) {
+      console.error('Form submission error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

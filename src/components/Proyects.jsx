@@ -15,44 +15,38 @@ import { ProjectItemShape } from "../types/propTypes";
  * @param {Object} props.project - Project data object
  * @param {Function} props.onOpenModal - Function to open project modal
  * @param {Array} props.detailedProjectInfo - Array with detailed project information
+ * @param {Function} props.t - Translation function
  * @returns {JSX.Element} Project item with details
  */
-const ProjectItem = ({ project, onOpenModal, detailedProjectInfo }) => {
+const ProjectItem = ({ project, onOpenModal, detailedProjectInfo, t }) => {
   const handleCardClick = (e) => {
     console.log("Card clicked - target:", e.target);
     console.log("Card clicked - currentTarget:", e.currentTarget);
     
-    // Si el clic fue en el enlace del título o sus elementos hijos, no abrir el modal
     const linkElement = e.target.closest('a[href]');
     if (linkElement) {
       console.log("Click on link, preventing modal");
       return;
     }
 
-    console.log("Opening modal for project:", project);
-    // Buscar información detallada del proyecto
     const detailedInfo = detailedProjectInfo.find(
       info => {
-        // Buscar por diferentes combinaciones de nombre
         const projectName = project.name.toLowerCase().trim();
         const infoTitle = info.title.toLowerCase().trim();
         
         return infoTitle === projectName || 
                infoTitle.includes(projectName) ||
                projectName.includes(infoTitle) ||
-               // Buscar coincidencias específicas conocidas
                (projectName.includes('todo') && infoTitle.includes('task')) ||
                (projectName.includes('ally360') && infoTitle.includes('ally')) ||
                (projectName.includes('gifos') && infoTitle.includes('gifos'));
       }
     );
     
-    console.log("Detailed project info found:", detailedInfo);
 
     if (detailedInfo) {
       onOpenModal(detailedInfo);
     } else {
-      // Si no se encuentra información detallada, crear un objeto básico
       const basicInfo = {
         title: project.name,
         description: project.description,
@@ -91,10 +85,10 @@ const ProjectItem = ({ project, onOpenModal, detailedProjectInfo }) => {
           </h3>
           
           <p className="mt-2 text-sm leading-normal">
-            {project.description}
+            {t(project.description)}
           </p>
           
-          <ul className="mt-2 flex flex-wrap" aria-label="Technologies used:">
+          <ul className="mt-2 flex flex-wrap" aria-label={t("Technologies used:")}>
             {project.skills.map((skill) => (
               <Tag key={skill} text={skill} />
             ))}
@@ -117,6 +111,7 @@ ProjectItem.propTypes = {
   project: ProjectItemShape.isRequired,
   onOpenModal: PropTypes.func.isRequired,
   detailedProjectInfo: PropTypes.array.isRequired,
+  t: PropTypes.func.isRequired,
 };
 
 /**
@@ -146,7 +141,7 @@ const Proyects = ({ proyectsData, link }) => {
     <section
       id={link}
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-      aria-label="Selected projects"
+      aria-label={t("Selected projects")}
     >
       <SectionHeader title={t("Personal Projects")} />
       
@@ -158,11 +153,11 @@ const Proyects = ({ proyectsData, link }) => {
               project={project} 
               onOpenModal={handleOpenModal}
               detailedProjectInfo={proyectsData.detailedProjectInfo || []}
+              t={t}
             />
           ))}
         </ul>
         
-        {/* Modal para mostrar detalles del proyecto */}
         <ProjectModal
           isOpen={isModalOpen}
           onClose={handleCloseModal}

@@ -8,6 +8,33 @@ import Tag from "./ui/Tag";
 import { createLinkProps, formatDateRange } from "../utils/helpers";
 import { ExperienceItemShape } from "../types/propTypes";
 
+// Add Spanish month mapping and parsing utilities for sorting by date (most recent first)
+const MONTHS_ES = {
+  Enero: 0,
+  Febrero: 1,
+  Marzo: 2,
+  Abril: 3,
+  Mayo: 4,
+  Junio: 5,
+  Julio: 6,
+  Agosto: 7,
+  Septiembre: 8,
+  Octubre: 9,
+  Noviembre: 10,
+  Diciembre: 11,
+};
+
+const parseSpanishMonthYear = (value) => {
+  if (!value || value.toLowerCase() === "presente") {
+    // Treat current roles as far-future for sorting
+    return new Date(9999, 11, 31).getTime();
+  }
+  const [month, year] = value.split(" ");
+  const m = MONTHS_ES[month] ?? 0;
+  const y = parseInt(year, 10) || 0;
+  return new Date(y, m, 1).getTime();
+};
+
 /**
  * ExperienceItem component for individual experience entries
  * @param {Object} props - Component props
@@ -52,7 +79,7 @@ const ExperienceItem = React.memo(({ experience, t }) => (
           {t(experience.description)}
         </p>
         
-        <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+        <ul className="mt-2 flex flex-wrap" aria-label={t("Technologies used")}>
           {experience.tags.map((tag) => (
             <Tag key={tag} text={tag} />
           ))}
@@ -74,18 +101,30 @@ ExperienceItem.propTypes = {
  */
 const Experience = React.memo(() => {
   const { t } = useTranslation();
+
+  // Sort experiences: most recent end date first; if tie, most recent start date first
+  const sortedExperiences = React.useMemo(() => {
+    return [...experienceInfo].sort((a, b) => {
+      const endA = parseSpanishMonthYear(a.dateEnd);
+      const endB = parseSpanishMonthYear(b.dateEnd);
+      if (endA !== endB) return endB - endA;
+      const startA = parseSpanishMonthYear(a.dateInit);
+      const startB = parseSpanishMonthYear(b.dateInit);
+      return startB - startA;
+    });
+  }, []);
   
   return (
     <section
       id="experience"
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-      aria-label="Work experience"
+      aria-label={t("Work experience")}
     >
       <SectionHeader title={t("Experience")} />
       
       <div>
         <ol className="group/list">
-          {experienceInfo.map((experience) => (
+          {sortedExperiences.map((experience) => (
             <ExperienceItem 
               key={experience.id} 
               experience={experience} 

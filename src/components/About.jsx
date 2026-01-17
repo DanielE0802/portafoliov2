@@ -42,18 +42,53 @@ const technologiesWithImages = [
   { name: "Git", imagePath: gitImage },
 ];
 
+// Helper to calculate age from birthdate (08 Feb 2002)
+const getAge = (birthDate) => {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+};
+
 /**
  * About component displaying personal information and technology skills
  * @returns {JSX.Element} About section with bio and technology showcase
  */
 const About = React.memo(() => {
   const { t } = useTranslation();
+  const age = React.useMemo(() => getAge(new Date(2002, 1, 8)), []); // Month is 0-indexed
+
+  const companyLinks = [
+    {
+      href: "https://www.linkedin.com/in/daniel-estupi%C3%B1%C3%A1n/overlay/1635471079928/single-media-viewer/?profileId=ACoAADQPELYBG7-Xdqra7yAcasY77pk1I6lR1tQ",
+      text: t("Desarrollo Web Full Stack (HTML, CSS, JavaScript y Bases de datos)."),
+    },
+    {
+      href: "https://www.aventi.co/",
+      text: "Aventi Solutions",
+    },
+    {
+      href: "https://tech.talentum.edu.co/#products",
+      text: "Corporación Talentum",
+    },
+    {
+      href: "https://universum.talentum.edu.co/",
+      text: "Universum",
+    },
+    {
+      href: "https://omni.pro/",
+      text: "Omni.Pro",
+    },
+  ];
 
   return (
     <section
       id="about"
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 text-justify"
-      aria-label="About me"
+      aria-label={t("About me")}
     >
       <SectionHeader title={t("About")} />
       
@@ -66,7 +101,7 @@ const About = React.memo(() => {
           <p>{t("about.bio.paragraph5")}</p>
         </div>
         
-        <section className="" aria-label="Technology skills">
+        <section className="" aria-label={t("Technology skills")}>
           <div className="py-2 lg:py-2 mx-auto max-w-screen-xl px-0">
             <div className="grid grid-cols-5 gap-8 text-gray-500 sm:gap-6 md:grid-cols-5 lg:grid-cols-6 dark:text-gray-400">
               {technologiesWithImages.map((tech) => (

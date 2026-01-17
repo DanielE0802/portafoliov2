@@ -27,7 +27,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             {t("projects.modal.description")}
           </h3>
           <p className="text-gray-300 leading-relaxed">
-            {project.detailedDescription?.[currentLang] || project.description}
+            {project.detailedDescription?.[currentLang] || t(project.description)}
           </p>
         </section>
 
@@ -118,6 +118,7 @@ ProjectModal.propTypes = {
     image: PropTypes.string.isRequired,
     tags: PropTypes.arrayOf(PropTypes.string).isRequired,
     link: PropTypes.string.isRequired,
+    "link-github": PropTypes.string,
   }),
 };
 

@@ -59,7 +59,7 @@ LanguageOption.propTypes = {
  * @returns {JSX.Element} Language selector dropdown
  */
 function LanguageSelector() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleLanguageChange = (language) => {
@@ -83,7 +83,7 @@ function LanguageSelector() {
             className="inline-flex items-center justify-center w-32 rounded-md border shadow-sm px-4 focus:ring-gray-700 py-2 bg-gray-700 hover:bg-gray-600 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 text-white border-gray-600"
             aria-haspopup="true"
             aria-expanded={isOpen}
-            aria-label="Select language"
+            aria-label={t("Select language")}
           >
             <FlagIcon countryCode={selectedLanguage?.key} />
             {selectedLanguage?.name}

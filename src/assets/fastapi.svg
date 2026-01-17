@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FastAPI">
-  <title>FastAPI</title>
-  <rect rx="24" width="256" height="256" fill="#05998B"/>
-  <g fill="#ffffff" font-family="Inter, Arial, Helvetica, sans-serif">
-    <text x="50%" y="50%" font-size="64" text-anchor="middle" font-weight="800" dominant-baseline="middle">FastAPI</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154 154" fill="none">
+  <circle cx="77" cy="77" r="77" fill="#009688"/>
+  <path d="M81.375 18.667l-38.75 70H77.5V135.333l38.75-70H81.375V18.667z" fill="white"/>
 </svg>

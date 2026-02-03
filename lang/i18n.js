@@ -6,7 +6,7 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         // Header and navigation
-        "Frontend Developer": "Frontend Developer",
+        "Frontend Developer": "Magento Developer",
         About: "About",
         Skills: "Skills",
         Experience: "Experience",
@@ -66,7 +66,7 @@ i18n.use(initReactI18next).init({
         "Actualmente trabajo en": "Currently I work at",
 
         "en el cargo de Semi-Senior Magento Frontend Developer. Soy una persona que está en constante aprendizaje, Estas son algunas tecnologías con las que he estado trabajando recientemente:":
-          "in the position of Semi-Senior Magento Frontend Developer. I am a person who is constantly learning. These are some of the technologies I have been working with recently:",
+          "in the position of a Semi-senior Magento Developer. I am a person who is constantly learning. These are some of the technologies I have been working with recently:",
 
         // About section
         "about": {
@@ -128,7 +128,7 @@ i18n.use(initReactI18next).init({
     es: {
       translation: {
         // Header and navigation
-        "Frontend Developer": "Desarrollador Frontend",
+        "Frontend Developer": "Desarrollador Magento",
         About: "Acerca de mi",
         Skills: "Habilidades",
         Experience: "Experiencia",
@@ -185,7 +185,7 @@ i18n.use(initReactI18next).init({
         "Actualmente trabajo en": "Actualmente trabajo en",
 
         "en el cargo de Semi-Senior Magento Frontend Developer. Soy una persona que está en constante aprendizaje, Estas son algunas tecnologías con las que he estado trabajando recientemente:":
-          "en el cargo de Semi-Senior Magento Frontend Developer. Soy una persona que está en constante aprendizaje. Estas son algunas tecnologías con las que he estado trabajando recientemente:",
+          "en el cargo de Semi-senior Magento Developer. Soy una persona que está en constante aprendizaje. Estas son algunas tecnologías con las que he estado trabajando recientemente:",
 
         // About section
         "about": {

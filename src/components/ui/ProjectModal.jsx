@@ -88,13 +88,37 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             {t("projects.modal.visitProject")}
             <ExternalLinkIcon className="w-4 h-4" />
           </a>
+
+          {project["link-app"] && (
+            <a
+              href={project["link-app"]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-colors font-medium ml-4"
+            >
+              {t("projects.modal.openApp")}
+              <ExternalLinkIcon className="w-4 h-4" />
+            </a>
+          )}
+
+          {project["link-api"] && (
+            <a
+              href={project["link-api"]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-colors font-medium ml-4"
+            >
+              {t("projects.modal.apiDocs")}
+              <ExternalLinkIcon className="w-4 h-4" />
+            </a>
+          )}
+
           {project["link-github"] && (
             <a
               href={project["link-github"]}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-
-700 text-white px-4 py-2 rounded-lg transition-colors font-medium ml-4"
+              className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-colors font-medium ml-4"
             >
               {t("projects.modal.viewCode")}
               <ExternalLinkIcon className="w-4 h-4" />

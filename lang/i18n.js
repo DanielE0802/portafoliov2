@@ -39,6 +39,9 @@ i18n.use(initReactI18next).init({
         "API REST completa para gestión de finanzas personales con FastAPI, PostgreSQL y despliegue en Heroku + Aiven. Incluye autenticación JWT, CRUD completo de transacciones y reportes financieros.":
           "Complete REST API for personal finance management with FastAPI, PostgreSQL, and deployment on Heroku + Aiven. Includes JWT authentication, full CRUD for transactions, and financial reports.",
 
+        "projects.ally360.card":
+          "SaaS ERP + POS for Colombian SMBs: touch-first multi-tab POS, multi-warehouse inventory, real-time analytics, and DIAN-ready invoicing flows. React 19 + TypeScript + MUI frontend and a multi-tenant FastAPI + PostgreSQL backend.",
+
         "Sistema ERP que permite la contabilidad, sistema POS. Herramienta para que el empresario tenga acceso a un software que le permita planificar, analizar y gestionar toda su empresa. Además de contar con una interfaz de usuario amigable y rápida.":
         "ERP system that allows accounting and POS system. A tool for entrepreneurs to have access to software that allows them to plan, analyze, and manage their entire company. In addition to having a user-friendly and fast interface.",
 
@@ -86,6 +89,8 @@ i18n.use(initReactI18next).init({
             "learnings": "What I Learned",
             "technologies": "Technologies Used",
             "visitProject": "Visit Project",
+            "openApp": "Open App",
+            "apiDocs": "API Docs",
             "viewCode": "View Code"
           }
         },
@@ -159,6 +164,9 @@ i18n.use(initReactI18next).init({
         "Sistema ERP que permite la contabilidad, sistema POS. Herramienta para que el empresario tenga acceso a un software que le permita planificar, analizar y gestionar toda su empresa. Además de contar con una interfaz de usuario amigable y rápida.":
           "Sistema ERP que permite la contabilidad, sistema POS. Herramienta para que el empresario tenga acceso a un software que le permita planificar, analizar y gestionar toda su empresa. Además de contar con una interfaz de usuario amigable y rápida.",
 
+        "projects.ally360.card":
+          "SaaS ERP + POS para PYMES colombianas: POS táctil multiventana, inventario multibodega, analítica en tiempo real e integración DIAN. Frontend en React 19 + TypeScript + MUI y backend multi-tenant en FastAPI + PostgreSQL.",
+
         // Personal info
         "Desarrollador especializado en Frontend con más de 4 años de experiencia en Magento 2, React, NestJS y FastAPI. Apasionado por construir experiencias digitales robustas, rápidas y escalables.":
           "Desarrollador especializado en Frontend con más de 4 años de experiencia en Magento 2, React, NestJS y FastAPI. Apasionado por construir experiencias digitales robustas",
@@ -205,6 +213,8 @@ i18n.use(initReactI18next).init({
             "learnings": "Lo que Aprendí",
             "technologies": "Tecnologías Utilizadas",
             "visitProject": "Visitar Proyecto",
+            "openApp": "Abrir App",
+            "apiDocs": "Docs API",
             "viewCode": "Ver Código"
           }
         },

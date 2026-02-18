@@ -37,20 +37,22 @@
         {
             "id": 4,
             "name": "Ally360",
-            "description": "Sistema ERP que permite la contabilidad, sistema POS. Herramienta para que el empresario tenga acceso a un software que le permita planificar, analizar y gestionar toda su empresa. Además de contar con una interfaz de usuario amigable y rápida. ",
-            "image": "https://ally360.netlify.app/logo/logoFondoTransparentesvg.svg",
-            "url": "https://ally360-web.netlify.app/ ",
+            "description": "projects.ally360.card",
+            "image": "https://ally360-web.netlify.app/logo/Macbook_Pro_ally_login.svg",
+            "url": "https://ally360.co/",
             "skills": [
-                "React-Hook-Form",
-                "Redux",
-                "React.js",
-                "MySQL",
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Material-UI",
-                "JWT",
-                "Yup"
+                "React 19",
+                "TypeScript",
+                "Material UI",
+                "Redux Toolkit",
+                "RTK Query",
+                "React Router",
+                "Vite",
+                "FastAPI",
+                "PostgreSQL",
+                "Redis",
+                "MinIO",
+                "Docker"
             ]
         },
         {
@@ -176,50 +178,69 @@
             "title": "Ally360",
             "description": "Sistema ERP que permite la contabilidad, sistema POS.",
             "detailedDescription": {
-                "es": "Ally360 es un sistema ERP integral diseñado para ayudar a los empresarios a gestionar y planificar sus negocios de manera eficiente. Ofrece funcionalidades avanzadas de contabilidad y un sistema de punto de venta (POS), todo con una interfaz amigable y rápida.",
-                "en": "Ally360 is a comprehensive ERP system designed to help entrepreneurs efficiently manage and plan their businesses. It offers advanced accounting functionalities and a point of sale (POS) system, all with a user-friendly and fast interface."
+                "es": "Ally360 es una plataforma SaaS (ERP + POS) para PYMES colombianas, enfocada en operaciones diarias y control del negocio: POS táctil multiventana, inventario multibodega, analítica y flujos de facturación/integración DIAN. Es un proyecto acreditado por Fondo Emprender, con base tecnológica sólida: frontend en React 19 + TypeScript + MUI (Redux Toolkit/RTK Query, React Router, React Hook Form + Yup), backend multi-tenant en FastAPI + PostgreSQL (JWT, aislamiento por tenant_id, jobs con Celery/Redis) y manejo de archivos con MinIO usando presigned URLs. También incluye un sitio público en Next.js (App Router) con MDX para blog y auditorías SEO/performance. La plataforma está dockerizada y preparada para despliegue con reverse proxy (Caddy) en servidor.",
+                "en": "Ally360 is a SaaS platform (ERP + POS) for Colombian SMBs, focused on daily operations and business control: touch POS with multi-tab sales, multi-warehouse inventory, analytics, and invoicing/DIAN-ready flows. It is a Fondo Emprender accredited project with a solid technical foundation: a React 19 + TypeScript + MUI frontend (Redux Toolkit/RTK Query, React Router, React Hook Form + Yup), a multi-tenant FastAPI + PostgreSQL backend (JWT, strict tenant_id isolation, background jobs with Celery/Redis) and file handling via MinIO using presigned URLs. It also includes a public marketing website in Next.js (App Router) with an MDX-based blog and SEO/performance checks. The platform is dockerized and prepared for server deployment behind a reverse proxy (Caddy)."
             },
             "challenges": {
                 "es": [
-                    "Integración de múltiples módulos en un solo sistema.",
-                    "Optimización del rendimiento para manejar grandes volúmenes de datos.",
-                    "Implementación de medidas de seguridad robustas para proteger la información empresarial."
+                    "Diseñar un backend multi-tenant con aislamiento estricto por empresa (tenant_id) y autorización por roles contextuales.",
+                    "Construir un POS táctil multiventana manteniendo estado consistente, rendimiento y UX fluida en pantallas táctiles.",
+                    "Definir contratos API estables para módulos (productos, inventario, tesorería/contabilidad) y mantener compatibilidad con el frontend.",
+                    "Implementar manejo de archivos con MinIO usando presigned URLs (subida directa + confirmación) sin exponer archivos públicamente.",
+                    "Preparar despliegue reproducible con Docker y reverse proxy (Caddy), cuidando variables de entorno y seguridad."
                 ],
                 "en": [
-                    "Integration of multiple modules into a single system.",
-                    "Performance optimization to handle large data volumes.",
-                    "Implementation of robust security measures to protect business information."
+                    "Designing a multi-tenant backend with strict tenant_id isolation and context-based role authorization.",
+                    "Building a touch-first, multi-tab POS while keeping state consistent, performant, and smooth.",
+                    "Defining stable API contracts across modules (products, inventory, treasury/accounting) while staying compatible with the frontend.",
+                    "Implementing MinIO file handling with presigned URLs (direct upload + confirmation) without exposing public files.",
+                    "Preparing a reproducible deployment with Docker and a reverse proxy (Caddy), focusing on env config and security."
                 ]
             },
             "learnings": {
                 "es": [
-                    "Desarrollo de aplicaciones empresariales complejas.",
-                    "Mejora en la gestión del estado global con Redux.",
-                    "Uso avanzado de React Hook Form para formularios."
+                    "Arquitectura modular en frontend (feature/modules) con React + TypeScript y patrones de hooks para separar UI y lógica de negocio.",
+                    "Gestión de estado y data-fetching con Redux Toolkit + RTK Query (cache, invalidación, y consistencia).",
+                    "Buenas prácticas de multi-tenancy y seguridad en APIs (JWT, guards, rate limiting/caching con Redis).",
+                    "Estrategias de rendimiento: code splitting, lazy loading y optimización de flujos críticos en POS.",
+                    "SEO técnico en Next.js: metadata, sitemap/robots y contenido MDX para blog."
                 ],
                 "en": [
-                    "Development of complex enterprise applications.",
-                    "Improved global state management with Redux.",
-                    "Advanced use of React Hook Form for forms."
+                    "Modular frontend architecture (feature/modules) with React + TypeScript and hook patterns to separate UI from business logic.",
+                    "State management and data fetching with Redux Toolkit + RTK Query (caching, invalidation, consistency).",
+                    "Multi-tenancy and API security best practices (JWT, guards, rate limiting/caching with Redis).",
+                    "Performance strategies: code splitting, lazy loading, and optimizing critical POS flows.",
+                    "Technical SEO in Next.js: metadata, sitemap/robots, and an MDX-based blog."
                 ]
             },
             "image": "https://ally360-web.netlify.app/logo/Macbook_Pro_ally_login.svg",
             "tags": [
-                "React.js",
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Chakra-UI",
-                "Redux",
-                "NestJS",
+                "React 19",
+                "TypeScript",
+                "Material UI",
+                "Redux Toolkit",
+                "RTK Query",
+                "React Router",
+                "React Hook Form",
+                "Yup",
+                "Vite",
+                "FastAPI",
                 "PostgreSQL",
-                "TypeORM",
-                "JWT",
-                "Custom-Hooks",
-                "React-Context"
+                "SQLAlchemy",
+                "Alembic",
+                "Redis",
+                "Celery",
+                "MinIO",
+                "Docker",
+                "Caddy",
+                "Next.js",
+                "MDX",
+                "SEO"
             ],
-            "link": "https://ally360-web.netlify.app/",
-            "link-github": "https://github.com/DanielE0802/pos-app-api"
+            "link": "https://ally360.co/",
+            "link-app": "https://app.ally360.co/auth/jwt/login",
+            "link-api": "https://api.ally360.co/docs",
+            "link-github": "https://github.com/ally-360/webapp-platform"
         },
         {
             "title": "Gifos",

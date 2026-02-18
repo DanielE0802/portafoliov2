@@ -39,7 +39,7 @@
             "name": "Ally360",
             "description": "Sistema ERP que permite la contabilidad, sistema POS. Herramienta para que el empresario tenga acceso a un software que le permita planificar, analizar y gestionar toda su empresa. Además de contar con una interfaz de usuario amigable y rápida. ",
             "image": "https://ally360.netlify.app/logo/logoFondoTransparentesvg.svg",
-            "url": "https://ally360-web.netlify.app/ ",
+            "url": "https://ally360.co/ ",
             "skills": [
                 "React-Hook-Form",
                 "Redux",
@@ -218,7 +218,7 @@
                 "Custom-Hooks",
                 "React-Context"
             ],
-            "link": "https://ally360-web.netlify.app/",
+            "link": "https://ally360.co/",
             "link-github": "https://github.com/DanielE0802/pos-app-api"
         },
         {

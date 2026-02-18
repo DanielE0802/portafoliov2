@@ -133,7 +133,7 @@ i18n.use(initReactI18next).init({
     es: {
       translation: {
         // Header and navigation
-        "Frontend Developer": "Desarrollador Magento",
+        "Frontend Developer": "Frontend Developer",
         About: "Acerca de mi",
         Skills: "Habilidades",
         Experience: "Experiencia",

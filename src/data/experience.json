@@ -2,7 +2,7 @@
     {
         "id": 1,
         "company": "Stefanini Latam",
-        "job": "Senior Magento Developer",
+        "job": "Senior Front-End Magento Developer",
         "dateInit": "Agosto 2023",
         "dateEnd": "Junio 2024",
         "link": "https://www.stefanini.com/es/",
@@ -45,7 +45,7 @@
     {
         "id": 3,
         "company": "Aventi Solutions",
-        "job": "Magento Developer",
+        "job": "Front-End Magento Developer",
         "dateInit": "Enero 2021",
         "dateEnd": "Agosto 2023",
         "link": "https://www.aventi.co/",
@@ -67,7 +67,7 @@
     {
         "id": 0,
         "company": "Omni.Pro",
-        "job": "Semi-senior Magento Developer",
+        "job": "Semi-senior Front-End Magento Developer",
         "dateInit": "Junio 2024",
         "dateEnd": "Presente",
         "link": "https://omni.pro/",

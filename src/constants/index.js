@@ -3,6 +3,7 @@ export const NAVIGATION_LINKS = [
   { href: "#about", translationKey: "About" },
   { href: "#experience", translationKey: "Experience" },
   { href: "#personal-projects", translationKey: "Personal Projects" },
+  { href: "#certificaciones", translationKey: "Courses and Certifications" },
   { href: "#projects", translationKey: "Work Projects" },
   { href: "#contact", translationKey: "Contact" },
 ];

@@ -7,8 +7,10 @@ import CustomCursorManager from "./components/CustomCursorManager";
 import Experience from "./components/Experience";
 import Proyects from "./components/Proyects";
 import Contact from "./components/Contact";
+import Certifications from "./components/Certifications";
 import { SkipNavigation } from "./components/ui";
 import proyectsData from "./data/proyects.json";
+import certificaciones from "./data/certificaciones";
 
 /**
  * Main App component that renders the portfolio layout
@@ -33,6 +35,7 @@ function App() {
             <About />
             <Experience />
             <Proyects proyectsData={proyectsData} link="personal-projects" />
+            <Certifications items={certificaciones} />
             <Contact />
           </main>
         </div>

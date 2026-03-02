@@ -8,3 +8,4 @@ export { default as LazyImage } from './LazyImage';
 export { default as SkipNavigation } from './SkipNavigation';
 export { default as Modal } from './Modal';
 export { default as ProjectModal } from './ProjectModal';
+export { default as CertificatePreviewModal } from './CertificatePreviewModal';

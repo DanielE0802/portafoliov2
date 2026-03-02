@@ -15,6 +15,7 @@ i18n.use(initReactI18next).init({
         Contact: "Contact",
         "Personal Projects": "Personal Projects",
         "Work Projects": "Work Projects",
+        "Courses and Certifications": "Courses and Certifications",
         "about.bio.paragraph1":
           "Software developer with experience in modern frontend development and scalable web platforms, focused on building clean, efficient, and business-oriented user interfaces.",
         "about.bio.paragraph2":
@@ -35,6 +36,27 @@ i18n.use(initReactI18next).init({
         "About me": "About me",
         "Technology skills": "Technology skills",
         "Select language": "Select language",
+
+        "certificaciones": {
+          "aria": "Courses and certifications",
+          "description": "A curated list of courses and certificates I've completed. You can open or download each file.",
+          "fields": {
+            "year": "Year:",
+            "credential": "Credential:",
+            "verification": "Verification:",
+            "skills": "Skills/topics"
+          },
+          "actions": {
+            "preview": "Preview",
+            "view": "View",
+            "viewFull": "Open Full PDF",
+            "download": "Download",
+            "verify": "Verify",
+            "viewAria": "Open certificate '{{title}}' in a new tab",
+            "downloadAria": "Download certificate '{{title}}'",
+            "verifyAria": "Open verification link for '{{title}}' in a new tab"
+          }
+        },
 
         "API REST completa para gestión de finanzas personales con FastAPI, PostgreSQL y despliegue en Heroku + Aiven. Incluye autenticación JWT, CRUD completo de transacciones y reportes financieros.":
           "Complete REST API for personal finance management with FastAPI, PostgreSQL, and deployment on Heroku + Aiven. Includes JWT authentication, full CRUD for transactions, and financial reports.",
@@ -142,6 +164,7 @@ i18n.use(initReactI18next).init({
         Contact: "Contacto",
         "Personal Projects": "Proyectos Personales",
         "Work Projects": "Proyectos Laborales",
+        "Courses and Certifications": "Cursos y Certificaciones",
         "about.bio.paragraph1":
           "Desarrollador de software con experiencia en frontend moderno y plataformas web escalables, enfocado en construir interfaces claras, eficientes y orientadas a negocio.",
         "about.bio.paragraph2":
@@ -161,6 +184,27 @@ i18n.use(initReactI18next).init({
         "About me": "Acerca de mí",
         "Technology skills": "Habilidades tecnológicas",
         "Select language": "Seleccionar idioma",
+
+        "certificaciones": {
+          "aria": "Cursos y certificaciones",
+          "description": "Una selección de cursos y certificados que he completado. Puedes abrir o descargar cada archivo.",
+          "fields": {
+            "year": "Año:",
+            "credential": "Credencial:",
+            "verification": "Verificación:",
+            "skills": "Skills/temas"
+          },
+          "actions": {
+            "preview": "Vista Previa",
+            "view": "Ver",
+            "viewFull": "Abrir PDF Completo",
+            "download": "Descargar",
+            "verify": "Verificar",
+            "viewAria": "Abrir el certificado '{{title}}' en una nueva pestaña",
+            "downloadAria": "Descargar el certificado '{{title}}'",
+            "verifyAria": "Abrir el enlace de verificación de '{{title}}' en una nueva pestaña"
+          }
+        },
         "Sistema ERP que permite la contabilidad, sistema POS. Herramienta para que el empresario tenga acceso a un software que le permita planificar, analizar y gestionar toda su empresa. Además de contar con una interfaz de usuario amigable y rápida.":
           "Sistema ERP que permite la contabilidad, sistema POS. Herramienta para que el empresario tenga acceso a un software que le permita planificar, analizar y gestionar toda su empresa. Además de contar con una interfaz de usuario amigable y rápida.",
 

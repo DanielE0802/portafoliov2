@@ -119,7 +119,7 @@ const About = React.memo(() => {
         {/* CV Download Section */}
         <div className="mt-8 flex justify-center">
           <a
-            href="/cv_frontend_daniel_estupinan_r.pdf"
+            href="/CV_fullstack_daniel_estupinan.pdf"
             download="Daniel_Estupinan_CV.pdf"
             className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
             aria-label={t('about.downloadCV')}

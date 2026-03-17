@@ -21,7 +21,7 @@ export const SOCIAL_LINKS = [
     icon: "linkedin",
   },
   {
-    href: "/CV_fullstack_daniel_estupinan.pdf",
+    href: "/CV_Daniel_Software_Developer.pdf",
     ariaLabel: "Download CV",
     icon: "download",
     download: "Daniel_Estupiñán_CV.pdf",
@@ -37,8 +37,8 @@ export const LANGUAGES = [
 // Personal information
 export const PERSONAL_INFO = {
   name: "Daniel Estupiñán",
-  title: "Frontend Developer",
-  description: "Desarrollador especializado en Frontend con más de 4 años de experiencia en eCommerce (Magento 2), React, FastAPI y NestJS.",
+  title: "Software Developer",
+  description: "Software Developer with 4+ years of experience building scalable web applications — from React & Next.js frontends to REST APIs with FastAPI and NestJS.",
 };
 
 // Technology skills configuration

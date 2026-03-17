@@ -6,7 +6,12 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         // Header and navigation
-        "Frontend Developer": "Magento Developer",
+        "Frontend Developer": "Software Developer",
+        "Software Developer": "Software Developer",
+        "Full Stack Developer — React & NestJS": "Full Stack Developer — React & NestJS",
+        "Magento Developer — eCommerce & Integrations": "Magento Developer — eCommerce & Integrations",
+        "Senior Software Developer — Adobe Commerce Cloud": "Senior Software Developer — Adobe Commerce Cloud",
+        "Senior Front-End Magento Developer": "Senior Front-End Magento Developer",
         About: "About",
         Skills: "Skills",
         Experience: "Experience",
@@ -17,15 +22,18 @@ i18n.use(initReactI18next).init({
         "Work Projects": "Work Projects",
         "Courses and Certifications": "Courses and Certifications",
         "about.bio.paragraph1":
-          "Software developer with experience in modern frontend development and scalable web platforms, focused on building clean, efficient, and business-oriented user interfaces.",
+          "Software developer focused on building complete, production-ready web applications. I work across the full stack — architecting React and Next.js frontends, designing REST APIs, and shipping backend services with FastAPI and NestJS.",
         "about.bio.paragraph2":
-          "I have worked in real production environments developing e-commerce solutions, dashboards, and SaaS platforms, contributing to both frontend implementation and backend integration. Throughout my career, I've collaborated with cross-functional teams, following best practices in code quality, performance, and maintainability.",
+          "Over the past 4+ years I've worked on real production environments: enterprise eCommerce platforms, SaaS dashboards, and data-driven applications. I've contributed to both the frontend layer and backend integrations, collaborating with cross-functional teams and taking ownership of full features end to end.",
         "about.bio.paragraph3":
-          "I have strong experience with Magento 2, building and customizing e-commerce stores while optimizing user experience and performance. In parallel, I've expanded my skill set toward modern frontend and full-stack development, working with React, Next.js, Vite, Material UI, Redux, and RTK Query, as well as backend technologies such as FastAPI, NestJS, and REST APIs.",
+          "I have solid experience in Magento 2 / Adobe Commerce Cloud, where I've built custom themes, modules, and third-party integrations for international brands — with measurable results like improving Core Web Vitals from 62 to 91 and cutting checkout load time from 10 seconds to 1.5 seconds.",
         "about.bio.paragraph4":
-          "I am currently developing Ally360, a personal SaaS project where I built both the frontend and backend, applying clean architecture principles, state management, API consumption, and responsive design.",
+          "Currently developing Ally360, a multi-tenant ERP + POS SaaS platform where I've made every architectural decision — from database modeling and API design to frontend component systems and deployment. Accredited by Fondo Emprender.",
         "about.bio.paragraph5":
-          "I consider myself an analytical, self-driven developer with a strong focus on continuous improvement and delivering well-structured solutions that create real value for users and businesses.",
+          "I value clean architecture, maintainable code, and solutions that create real business value.",
+                "Software Developer with 4+ years of experience building scalable web applications — from React & Next.js frontends to REST APIs with FastAPI and NestJS.":
+                  "Software Developer with 4+ years of experience building scalable web applications — from React & Next.js frontends to REST APIs with FastAPI and NestJS.",
+
         
         "Technologies used": "Technologies used",
         "Technologies used:": "Technologies used:",
@@ -138,24 +146,32 @@ i18n.use(initReactI18next).init({
         },
 
         // Experience descriptions
-        "Implementación de nuevas funcionalidades, vistas e interaciónes en la plataforma de e-commerce de Movistar Peru, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros.":
-          "Implementation of new functionalities, views and interactions in the Movistar Peru e-commerce platform, working together with the team for continuous improvement of the platform, such as KO implementation in the purchase flow, sad-path integration, implementation of new views, among others.",
+        "Implementación de nuevas funcionalidades, vistas e interaciónes en la plataforma de e-commerce de Movistar Peru, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros. Reduje el tiempo de carga del checkout de ~10s a ~1.5s mediante optimizaciones frontend y backend en pantallas críticas.":
+          "Implementation of new functionalities, views and interactions in the Movistar Peru e-commerce platform, working together with the team for continuous improvement of the platform, such as KO implementation in the purchase flow, sad-path integration, implementation of new views, among others. Reduced checkout load time from ~10s to ~1.5s through frontend and backend optimizations across critical screens.",
 
-        "Desarrollo del dashboard para el proyecto Universum, el cual permite a los docentes y administrativos de las instituciones educativas gestionar y analisar la información suminitrada por el juego, permitiendo la generación de reportes y estadísticas de las actividades. Permitiendo filtrar por institución, grado, grupo, estudiante, entre otros. Actualmente continuo trabajando en otros proyectos de la empresa.":
-          "Development of the dashboard for the Universum project, which allows teachers and administrators of educational institutions to manage and analyze the information provided by the game, enabling the generation of reports and statistics of activities. Allowing filtering by institution, grade, group, student, among others. Currently I continue working on other company projects.",
+        "Construí desde cero una plataforma de análisis de datos para el proyecto Universum — con responsabilidad completa de frontend y backend. La plataforma permite a docentes y administradores gestionar y analizar datos educativos, generar reportes y filtrar estadísticas de actividad por institución, grado, grupo y estudiante. Arquitecté el frontend con React + Redux, construyendo dashboards y vistas de reportes con alta densidad de datos. Diseñé y desarrollé la API REST del backend usando NestJS + TypeORM con arquitectura modular (controllers, services, DTOs), aplicando principios de clean code en todo el desarrollo.":
+          "Built a data analysis platform for the Universum project from scratch — full ownership of both frontend and backend. The platform allows teachers and administrators to manage and analyze educational data, generate reports, and filter activity statistics by institution, grade, group, and student. Architected the frontend with React + Redux, building data-rich dashboards and report views. Designed and developed the backend REST API using NestJS + TypeORM with modular architecture (controllers, services, DTOs), applying clean code principles throughout.",
+
+        "Desarrollé y mantuve soluciones eCommerce para múltiples clientes en verticales de retail y servicios — incluyendo Evacol, Rimax, Saluti, Toscana, Empack y Casa Andina. Construí desde cero un módulo personalizado de Store Locator. Colaboré con el equipo backend para exponer endpoints REST vía Magento WebApi para integración con ERP, habilitando sincronización de datos en tiempo real entre la tienda y un sistema ERP de terceros. Di soporte a la integración de pasarela de pagos PayU en múltiples proyectos, manejando flujos de tokenización y validación de transacciones. Este rol fue fundamental: aquí desarrollé un dominio profundo de todo el stack de Magento — temas personalizados, Knockout.js, desarrollo de módulos e integraciones con terceros.":
+          "Developed and maintained eCommerce solutions for multiple clients across retail and services verticals — including Evacol, Rimax, Saluti, Toscana, Empack, and Casa Andina. Built a custom Store Locator module from scratch. Collaborated with the backend team to expose REST API endpoints via Magento WebApi for ERP integration, enabling real-time data sync between the store and a third-party ERP system. Supported PayU payment gateway integration across multiple projects, handling tokenization and transaction validation flows. This role was foundational — where I developed deep proficiency across the full Magento stack: custom themes, Knockout.js, module development, and third-party integrations.",
 
         "Lideré y participé en diferentes proyectos como Frontend Developer para la migración y desarrollo de tiendas e-commerce utilizando la plataforma de Magento 2 Community y Commerce, además, capacitación y mejoras internas de la empresa. Proyectos: Rimax, Saluti, Empack, entre otros.":
           "I led and participated in different projects as Frontend Developer for the migration and development of e-commerce stores using the Magento 2 Community and Commerce platform, in addition, training and internal improvements of the company. Projects: Rimax, Saluti, Empack, among others.",
 
         // New Omni.Pro experience description
-        "Desarrollo de soluciones eCommerce en Magento 2 Cloud y Enterprise para Kohler, Sportline y Polar. Personalización de temas (PHTML, XML, Knockout.js), implementación de módulos personalizados y optimización de SEO y rendimiento.":
-          "Developed eCommerce solutions in Magento 2 Cloud & Enterprise for Kohler, Sportline, and Polar. Customized themes (PHTML, XML, Knockout.js), implemented custom modules, and optimized SEO and performance."
+        "Desarrollo de soluciones eCommerce en Magento 2 Cloud y Enterprise para Kohler, Sportline y Polar. Personalización de temas (PHTML, XML, Knockout.js), implementación de módulos personalizados y optimización de SEO y rendimiento. Mejoré el puntaje de Core Web Vitals de 62 a 91, reduciendo la tasa de rebote en un 18%.":
+          "Developed eCommerce solutions in Magento 2 Cloud & Enterprise for Kohler, Sportline, and Polar. Customized themes (PHTML, XML, Knockout.js), implemented custom modules, and optimized SEO and performance. Improved Core Web Vitals score from 62 to 91, reducing bounce rate by 18%."
       },
     },
     es: {
       translation: {
         // Header and navigation
-        "Frontend Developer": "Frontend Developer",
+        "Frontend Developer": "Software Developer",
+        "Software Developer": "Desarrollador de Software",
+        "Full Stack Developer — React & NestJS": "Desarrollador Full Stack — React & NestJS",
+        "Magento Developer — eCommerce & Integrations": "Desarrollador Magento — eCommerce e Integraciones",
+        "Senior Software Developer — Adobe Commerce Cloud": "Senior Desarrollador de Software — Adobe Commerce Cloud",
+        "Senior Front-End Magento Developer": "Senior Desarrollador Front-End Magento",
         About: "Acerca de mi",
         Skills: "Habilidades",
         Experience: "Experiencia",
@@ -166,15 +182,18 @@ i18n.use(initReactI18next).init({
         "Work Projects": "Proyectos Laborales",
         "Courses and Certifications": "Cursos y Certificaciones",
         "about.bio.paragraph1":
-          "Desarrollador de software con experiencia en frontend moderno y plataformas web escalables, enfocado en construir interfaces claras, eficientes y orientadas a negocio.",
+          "Desarrollador de software enfocado en construir aplicaciones web completas y listas para producción. Trabajo a lo largo del full stack — arquitectando frontends en React y Next.js, diseñando APIs REST y entregando servicios backend con FastAPI y NestJS.",
         "about.bio.paragraph2":
-          "He trabajado en entornos reales de producción desarrollando aplicaciones e-commerce, dashboards y plataformas SaaS, participando tanto en la construcción de interfaces como en la integración con servicios backend. A lo largo de mi carrera he colaborado con equipos multidisciplinarios, siguiendo buenas prácticas de desarrollo, rendimiento y mantenibilidad del código.",
+          "Durante los últimos 4+ años he trabajado en entornos reales de producción: plataformas eCommerce enterprise, dashboards SaaS y aplicaciones basadas en datos. He contribuido tanto en la capa frontend como en integraciones backend, colaborando con equipos multidisciplinarios y tomando ownership de features de punta a punta.",
         "about.bio.paragraph3":
-          "Cuento con experiencia sólida en Magento 2, donde he desarrollado y personalizado tiendas para diferentes marcas, optimizando la experiencia de usuario y el rendimiento. En paralelo, he ampliado mi perfil hacia el frontend moderno y desarrollo full-stack, trabajando con React, Next.js, Vite, Material UI, Redux y RTK Query, así como en el backend con FastAPI, NestJS y APIs REST.",
+          "Tengo experiencia sólida en Magento 2 / Adobe Commerce Cloud, donde he construido temas, módulos e integraciones con terceros para marcas internacionales — con resultados medibles como mejorar Core Web Vitals de 62 a 91 y reducir el tiempo de carga del checkout de 10 segundos a 1.5 segundos.",
         "about.bio.paragraph4":
-          "Actualmente desarrollo Ally360, un proyecto SaaS personal donde he construido tanto el frontend como el backend, aplicando principios de arquitectura limpia, gestión de estado, consumo de APIs y diseño responsive.",
+          "Actualmente desarrollo Ally360, una plataforma SaaS multi-tenant de ERP + POS donde he tomado cada decisión de arquitectura — desde el modelado de base de datos y el diseño de API hasta el sistema de componentes del frontend y el despliegue. Acreditado por Fondo Emprender.",
         "about.bio.paragraph5":
-          "Me caracterizo por ser una persona analítica, autodidacta y orientada a la mejora continua, con interés en crear soluciones bien estructuradas que aporten valor real al usuario y al negocio.",
+          "Valoro la arquitectura limpia, el código mantenible y las soluciones que crean valor real para el negocio.",
+                "Software Developer with 4+ years of experience building scalable web applications — from React & Next.js frontends to REST APIs with FastAPI and NestJS.":
+                  "Desarrollador de software con más de 4 años de experiencia construyendo aplicaciones web escalables — desde frontends en React y Next.js hasta APIs REST con FastAPI y NestJS.",
+
         "Technologies used": "Tecnologías utilizadas",
         "Technologies used:": "Tecnologías utilizadas:",
         "Selected projects": "Proyectos seleccionados",
@@ -284,18 +303,21 @@ i18n.use(initReactI18next).init({
         },
 
         // Experience descriptions
-        "Implementación de nuevas funcionalidades, vistas e interaciónes en la plataforma de e-commerce de Movistar Peru, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros.":
-          "Implementación de nuevas funcionalidades, vistas e interacciones en la plataforma de e-commerce de Movistar Perú, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros.",
+        "Implementación de nuevas funcionalidades, vistas e interaciónes en la plataforma de e-commerce de Movistar Peru, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros. Reduje el tiempo de carga del checkout de ~10s a ~1.5s mediante optimizaciones frontend y backend en pantallas críticas.":
+          "Implementación de nuevas funcionalidades, vistas e interacciones en la plataforma de e-commerce de Movistar Perú, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros. Reduje el tiempo de carga del checkout de ~10s a ~1.5s mediante optimizaciones frontend y backend en pantallas críticas.",
 
-        "Desarrollo del dashboard para el proyecto Universum, el cual permite a los docentes y administrativos de las instituciones educativas gestionar y analisar la información suminitrada por el juego, permitiendo la generación de reportes y estadísticas de las actividades. Permitiendo filtrar por institución, grado, grupo, estudiante, entre otros. Actualmente continuo trabajando en otros proyectos de la empresa.":
-          "Desarrollo del dashboard para el proyecto Universum, el cual permite a los docentes y administrativos de las instituciones educativas gestionar y analizar la información suministrada por el juego, permitiendo la generación de reportes y estadísticas de las actividades. Permitiendo filtrar por institución, grado, grupo, estudiante, entre otros. Actualmente continúo trabajando en otros proyectos de la empresa.",
+        "Construí desde cero una plataforma de análisis de datos para el proyecto Universum — con responsabilidad completa de frontend y backend. La plataforma permite a docentes y administradores gestionar y analizar datos educativos, generar reportes y filtrar estadísticas de actividad por institución, grado, grupo y estudiante. Arquitecté el frontend con React + Redux, construyendo dashboards y vistas de reportes con alta densidad de datos. Diseñé y desarrollé la API REST del backend usando NestJS + TypeORM con arquitectura modular (controllers, services, DTOs), aplicando principios de clean code en todo el desarrollo.":
+          "Construí desde cero una plataforma de análisis de datos para el proyecto Universum — con responsabilidad completa de frontend y backend. La plataforma permite a docentes y administradores gestionar y analizar datos educativos, generar reportes y filtrar estadísticas de actividad por institución, grado, grupo y estudiante. Arquitecté el frontend con React + Redux, construyendo dashboards y vistas de reportes con alta densidad de datos. Diseñé y desarrollé la API REST del backend usando NestJS + TypeORM con arquitectura modular (controllers, services, DTOs), aplicando principios de clean code en todo el desarrollo.",
+
+        "Desarrollé y mantuve soluciones eCommerce para múltiples clientes en verticales de retail y servicios — incluyendo Evacol, Rimax, Saluti, Toscana, Empack y Casa Andina. Construí desde cero un módulo personalizado de Store Locator. Colaboré con el equipo backend para exponer endpoints REST vía Magento WebApi para integración con ERP, habilitando sincronización de datos en tiempo real entre la tienda y un sistema ERP de terceros. Di soporte a la integración de pasarela de pagos PayU en múltiples proyectos, manejando flujos de tokenización y validación de transacciones. Este rol fue fundamental: aquí desarrollé un dominio profundo de todo el stack de Magento — temas personalizados, Knockout.js, desarrollo de módulos e integraciones con terceros.":
+          "Desarrollé y mantuve soluciones eCommerce para múltiples clientes en verticales de retail y servicios — incluyendo Evacol, Rimax, Saluti, Toscana, Empack y Casa Andina. Construí desde cero un módulo personalizado de Store Locator. Colaboré con el equipo backend para exponer endpoints REST vía Magento WebApi para integración con ERP, habilitando sincronización de datos en tiempo real entre la tienda y un sistema ERP de terceros. Di soporte a la integración de pasarela de pagos PayU en múltiples proyectos, manejando flujos de tokenización y validación de transacciones. Este rol fue fundamental: aquí desarrollé un dominio profundo de todo el stack de Magento — temas personalizados, Knockout.js, desarrollo de módulos e integraciones con terceros.",
 
         "Lideré y participé en diferentes proyectos como Frontend Developer para la migración y desarrollo de tiendas e-commerce utilizando la plataforma de Magento 2 Community y Commerce, además, capacitación y mejoras internas de la empresa. Proyectos: Rimax, Saluti, Empack, entre otros.":
           "Lideré y participé en diferentes proyectos como Frontend Developer para la migración y desarrollo de tiendas e-commerce utilizando la plataforma de Magento 2 Community y Commerce, además, capacitación y mejoras internas de la empresa. Proyectos: Rimax, Saluti, Empack, entre otros.",
 
         // New Omni.Pro experience description
-        "Desarrollo de soluciones eCommerce en Magento 2 Cloud y Enterprise para Kohler, Sportline y Polar. Personalización de temas (PHTML, XML, Knockout.js), implementación de módulos personalizados y optimización de SEO y rendimiento.":
-          "Desarrollo de soluciones eCommerce en Magento 2 Cloud y Enterprise para Kohler, Sportline y Polar. Personalización de temas (PHTML, XML, Knockout.js), implementación de módulos personalizados y optimización de SEO y rendimiento."
+        "Desarrollo de soluciones eCommerce en Magento 2 Cloud y Enterprise para Kohler, Sportline y Polar. Personalización de temas (PHTML, XML, Knockout.js), implementación de módulos personalizados y optimización de SEO y rendimiento. Mejoré el puntaje de Core Web Vitals de 62 a 91, reduciendo la tasa de rebote en un 18%.":
+          "Desarrollo de soluciones eCommerce en Magento 2 Cloud y Enterprise para Kohler, Sportline y Polar. Personalización de temas (PHTML, XML, Knockout.js), implementación de módulos personalizados y optimización de SEO y rendimiento. Mejoré el puntaje de Core Web Vitals de 62 a 91, reduciendo la tasa de rebote en un 18%."
       },
     },
   },

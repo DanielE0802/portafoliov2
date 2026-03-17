@@ -6,7 +6,7 @@
         "dateInit": "Agosto 2023",
         "dateEnd": "Junio 2024",
         "link": "https://www.stefanini.com/es/",
-        "description": "Implementación de nuevas funcionalidades, vistas e interaciónes en la plataforma de e-commerce de Movistar Peru, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros.",
+        "description": "Implementación de nuevas funcionalidades, vistas e interaciónes en la plataforma de e-commerce de Movistar Peru, trabajando en conjunto con el equipo para la mejora continua de la plataforma, como implementación de KO en el flujo de compra, integración sad-path, implementación de nuevas vistas, entre otros. Reduje el tiempo de carga del checkout de ~10s a ~1.5s mediante optimizaciones frontend y backend en pantallas críticas.",
         "tags": [
             "Magento 2",
             "PHTML",
@@ -24,54 +24,54 @@
     {
         "id": 2,
         "company": "Corporación Talentum",
-        "job": "Full-stack Developer",
+        "job": "Full Stack Developer — React & NestJS",
         "dateInit": "Enero 2023",
         "dateEnd": "Enero 2024",
         "link": "https://talentum.edu.co/",
-        "description": "Desarrollo del dashboard para el proyecto Universum, el cual permite a los docentes y administrativos de las instituciones educativas gestionar y analisar la información suminitrada por el juego, permitiendo la generación de reportes y estadísticas de las actividades. Permitiendo filtrar por institución, grado, grupo, estudiante, entre otros. Actualmente continuo trabajando en otros proyectos de la empresa.",
+        "description": "Construí desde cero una plataforma de análisis de datos para el proyecto Universum — con responsabilidad completa de frontend y backend. La plataforma permite a docentes y administradores gestionar y analizar datos educativos, generar reportes y filtrar estadísticas de actividad por institución, grado, grupo y estudiante. Arquitecté el frontend con React + Redux, construyendo dashboards y vistas de reportes con alta densidad de datos. Diseñé y desarrollé la API REST del backend usando NestJS + TypeORM con arquitectura modular (controllers, services, DTOs), aplicando principios de clean code en todo el desarrollo.",
         "tags": [
             "React",
             "Redux",
-            "React Router",
-            "React Hooks",
             "NestJS",
-            "NextJS",
-            "CSS",
-            "JavaScript",
+            "TypeORM",
+            "Node.js",
+            "PostgreSQL",
+            "REST API",
+            "Docker",
             "Git",
-            "Docker"
+            "Scrum"
         ]
     },
     {
         "id": 3,
         "company": "Aventi Solutions",
-        "job": "Front-End Magento Developer",
+        "job": "Magento Developer — eCommerce & Integrations",
         "dateInit": "Enero 2021",
         "dateEnd": "Agosto 2023",
         "link": "https://www.aventi.co/",
-        "description": "Front-end developer working with technologies such as JavaScript, HTML, PHTML, CSS, LESS, plus tools like  Git, GitFlow, using CMS such as Magento 2  and WordPress. Working in projects ecommerce like Evacol, Rimax, Saluti, Toscana, Empack, Casa Andina.","tags": [
+        "description": "Desarrollé y mantuve soluciones eCommerce para múltiples clientes en verticales de retail y servicios — incluyendo Evacol, Rimax, Saluti, Toscana, Empack y Casa Andina. Construí desde cero un módulo personalizado de Store Locator. Colaboré con el equipo backend para exponer endpoints REST vía Magento WebApi para integración con ERP, habilitando sincronización de datos en tiempo real entre la tienda y un sistema ERP de terceros. Di soporte a la integración de pasarela de pagos PayU en múltiples proyectos, manejando flujos de tokenización y validación de transacciones. Este rol fue fundamental: aquí desarrollé un dominio profundo de todo el stack de Magento — temas personalizados, Knockout.js, desarrollo de módulos e integraciones con terceros.",
+        "tags": [
             "Magento 2",
+            "PHP",
             "PHTML",
             "LESS",
-            "JavaScript",
             "Knockout.js",
-            "Bootstrap",
-            "Jira",
+            "JavaScript",
+            "REST API",
+            "WebApi",
+            "PayU",
             "Git",
-            "GitLab",
-            "GitFlow",
-            "Scrum",
-            "Linux"
+            "Scrum"
         ]
     },
     {
         "id": 0,
         "company": "Omni.Pro",
-        "job": "Semi-senior Front-End Magento Developer",
+        "job": "Senior Software Developer — Adobe Commerce Cloud",
         "dateInit": "Junio 2024",
         "dateEnd": "Presente",
         "link": "https://omni.pro/",
-        "description": "Desarrollo de soluciones eCommerce en Magento 2 Cloud y Enterprise para Kohler, Sportline y Polar. Personalización de temas (PHTML, XML, Knockout.js), implementación de módulos personalizados y optimización de SEO y rendimiento.",
+        "description": "Desarrollo de soluciones eCommerce en Magento 2 Cloud y Enterprise para Kohler, Sportline y Polar. Personalización de temas (PHTML, XML, Knockout.js), implementación de módulos personalizados y optimización de SEO y rendimiento. Mejoré el puntaje de Core Web Vitals de 62 a 91, reduciendo la tasa de rebote en un 18%.",
         "tags": [
             "Magento 2",
             "PHTML",
